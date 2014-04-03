@@ -1,0 +1,6 @@
+*~
+*.pyc
+*.db
+temp/
+node-modules/
+
