@@ -7,128 +7,107 @@ body > header .logo {
             margin-right: .01em;
             max-height: 4em; }
 
-        body > footer img {
+body > footer img {
             height: 2em;
             position: relative;
             top: 0.1em;
             left: 0.1em; }
      
 
-        section.landing input {
+section.landing input {
             border-radius: 1px 0px 0px 1px !important;
             height: 48px;}
 
-        section.landing button {
+section.landing button {
             border-radius: 0px 1px 1px 0px !important;
             height: 48px;}
 
 
-        #videoFenix .row{
-            width: 100%
-        }
+#videoFenix .row{
+    width: 100%;}
 
-        .button.large, button.large {
+.button.large, button.large {
             font-size: 1.3em;}
-        .training{
-            background: url(../images/portada.jpg) no-repeat;
-                        -webkit-background-size: 100% 100%;
--moz-background-size: 100% 100%;
--o-background-size: 100% 100%;
-background-size: 100% 100%;
-        }
-        .bgCuadros1{
-            
-background-image: url(../assets/shattered-dark.png);
-        }
-        .bgCirculo1{
-            background-color: #038c9e;
-background-image: url(../assets/swirl.png);
+.training{
+    background: url(../images/portada.jpg) no-repeat;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+    }
+.bgCuadros1{
+    background-image: url(../assets/shattered-dark.png);}
+.bgCirculo1{
+    background-color: #038c9e;
+    background-image: url(../assets/swirl.png);}
 
-        }
+.bgBonito{
+    background-color: #ffffff;
+    background-image: url(../assets/mirrored-squares.png);}
+.bgBrian{
+    background-image: url(../assets/gplay.png);}
 
-        .bgTela1{
-            background-color: #ecf0f1;
-background-image: url(http://www.transparenttextures.com/patterns/whitey.png);
+.bgRuido{
+    background-color: #ecf0f1;
+    background-image: url(../assets/subtle-zebra-3d.png);}
 
-        }
-        .bgDesgarrado{
-            background-color: #ecf0f1;
-background-image: url(http://www.transparenttextures.com/patterns/wood-pattern.png);
+#owl-Programas .item img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
 
-        }
-        .bgBonito{
-            background-color: #ffffff;
-background-image: url(http://www.transparenttextures.com/patterns/mirrored-squares.png);
+#owl-demo .item img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
 
-        }
-        .bgBrian{
-            
-background-image: url(http://www.transparenttextures.com/patterns/gplay.png);
-
-        }
-        .bgMadera{
-            background-color: #ffffff;
-background-image: url(http://www.transparenttextures.com/patterns/tileable-wood.png);
-
-        }
-        .bgRuido{
-            background-color: #ecf0f1;
-background-image: url(http://www.transparenttextures.com/patterns/subtle-zebra-3d.png);
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-
-        }
-        #owl-Programas .item img{
-            display: block;
-            width: 100%;
-            height: auto;
-        }
-
-        #owl-demo .item img{
-            display: block;
-            width: 100%;
-            height: auto;
-        }
-        #bar{
+#bar{
   width: 0%;
   max-width: 100%;
   height: 4px;
   background: #0588c0;
 }
+
 #progressBar{
   width: 100%;
   background: #EDEDED;
 }
-        .embed-container { position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden; max-width: 100%; height: auto; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
-        .Galeria{
-            padding-top: 2em;
-        }
 
-        .Galeria i{
-            color: #0588c0;
-            font-size: 4.7em;
-            font-style: normal;
-              -webkit-transition:all 1s ease-out;  /* Chrome y Safari */
-  -o-transition:all 1s ease-out;  /* Opera */
-  -moz-transition:all 1s ease-out;  /* Mozilla Firefox */
-  -ms-transition:all 1s ease-out;   /* Internet Explorer */
-  transition:all 1s ease-out;  /* W3C */
-        }
-        .Galeria i:hover{
-            color: #3CAEE0;
-        }
+.embed-container { position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden; max-width: 100%; height: auto; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
 
-        #cabezera .item img{
-            display: block;     
-            width: 100%;
-            height: auto;
-        }
+.Galeria{
+    padding-top: 2em;
+    }
+
+.Galeria i{
+    color: #0588c0;
+    font-size: 4.7em;
+    font-style: normal;
+    -webkit-transition:all 1s ease-out;  /* Chrome y Safari */
+    -o-transition:all 1s ease-out;  /* Opera */
+    -moz-transition:all 1s ease-out;  /* Mozilla Firefox */
+    -ms-transition:all 1s ease-out;   /* Internet Explorer */
+    transition:all 1s ease-out;  /* W3C */
+    }
+.Galeria i:hover{
+    color: #3CAEE0;
+    }
+
+#cabezera .item img{
+    display: block;     
+    width: 100%;
+    height: auto;
+}
         
 #sociallinks a i{
     font-size: 2.2em;
     font-style: normal;
-    padding-right: .4em;
+    padding-right: .1em;
     
-}#sociallinks a:hover{
+}
+#sociallinks a:hover{
     color: #34495E;
 }
 #mapFenix{
@@ -138,23 +117,21 @@ background-image: url(http://www.transparenttextures.com/patterns/subtle-zebra-3
 }
 
 @media only screen and (min-width: 960px) and (max-width: 1199px){
-body > section.landing h1 {
-font-size: 6em;
-}
+    body > section.landing h1 {
+        font-size: 6em;
+    }
     body > section.landing h2 {
-font-size: 3em;
+        font-size: 3em;
+        }
+    #videoFenix .row{
+        width: 100%;}
+    .training{
+        -webkit-background-size: cover ;
+        -moz-background-size: cover ;
+        -o-background-size: cover ;
+        background-size: cover ;
+    }
 }
-#videoFenix .row{
-            width: 100%;}
-.training{
--webkit-background-size: cover ;
--moz-background-size: cover ;
--o-background-size: cover ;
-background-size: cover ;
-}
-}
-
-
 @media only screen and (min-width: 768px) and (max-width: 959px){
     body > section.landing h1 {
         font-size: 6em;
@@ -164,14 +141,13 @@ background-size: cover ;
     }
     #videoFenix .row{
             width: 100%;}
-.training{
--webkit-background-size: cover ;
--moz-background-size: cover ;
--o-background-size: cover ;
-background-size: cover ;
+    .training{
+        -webkit-background-size: cover ;
+        -moz-background-size: cover ;
+        -o-background-size: cover ;
+        background-size: cover ;
+    }
 }
-}
-
 @media only screen and (min-width: 480px) and (max-width: 767px){
     body > header .logo {
                 margin-top: .01em;
@@ -183,32 +159,42 @@ background-size: cover ;
     body > section.landing h2 {
         font-size: 2em;
     }
-#videoFenix .row{
-            width: 100%;}
-.training{
--webkit-background-size: cover ;
--moz-background-size: cover ;
--o-background-size: cover ;
-background-size: cover ;
-}
+    #videoFenix .row{
+                width: 100%;}
+    .training{
+        -webkit-background-size: cover ;
+        -moz-background-size: cover ;
+        -o-background-size: cover ;
+        background-size: cover ;
+    }
 }
 @media only screen and (max-width: 479px){
-     body > header .logo {
+    body > header .logo {
                 margin-top: .01em;
                 margin-right: .01em;
                 max-height: 7em; }
-     body > section.landing h1 {
+    body > section.landing h1 {
             font-size: 3em;
         }
-        body > section.landing h2 {
+    body > section.landing h2 {
             font-size: 2em;
-        }
-        #videoFenix .row{
+    }
+    #videoFenix .row{
             width: 100%;}
     .training{
-    -webkit-background-size: cover ;
-    -moz-background-size: cover ;
-    -o-background-size: cover ;
-    background-size: cover ;
+        background: url(../images/portada_m.jpg) no-repeat;
+        -webkit-background-size: cover ;
+        -moz-background-size: cover ;
+        -o-background-size: cover ;
+        background-size: cover ;
+    }
+}
+@media only screen and (max-width: 342px){
+    .training{
+        background: url(../images/portada_m.jpg) no-repeat;
+        -webkit-background-size: cover ;
+        -moz-background-size: cover ;
+        -o-background-size: cover ;
+        background-size: cover ;
     }
 }

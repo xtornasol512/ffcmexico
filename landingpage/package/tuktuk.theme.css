@@ -14,7 +14,7 @@ body .bck.color nav[data-tuktuk=menu] > a.active,body .bck.dark nav[data-tuktuk=
 body .bck.light{background-color:#ecf0f1}
 body .bck.color{background-color:#34495e}
 body .bck.dark{background-color:#0588c0}
-body .bck.theme{background-color:#1abc9c}
+body .bck.theme{background-color:#0588c0}
 body .bck.alert{background-color:#e74c3c !important}
 body .bck.theme,body .bck.alert{color:#fff}
 body .bck.color,body .bck.dark{color:#c4d2df;}

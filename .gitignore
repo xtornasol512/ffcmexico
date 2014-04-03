@@ -3,4 +3,6 @@
 *.db
 temp/
 node-modules/
+*.php
+*.ico
 
