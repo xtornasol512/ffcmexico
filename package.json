@@ -1,0 +1,32 @@
+{
+  "name": "ffcmexico",
+  "version": "0.0.1",
+  "description": "WebPage of ffcmexico",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/xtornasol512/ffcmexico.git"
+  },
+  "keywords": [
+    "ffcmexico",
+    "html5",
+    "gulp",
+    "js",
+    "css3",
+    "python"
+  ],
+  "author": "Cxuko",
+  "license": "GPL v3",
+  "bugs": {
+    "url": "https://github.com/xtornasol512/ffcmexico/issues"
+  },
+  "homepage": "https://github.com/xtornasol512/ffcmexico",
+  "devDependencies": {
+    "gulp": "^3.6.0",
+    "gulp-concat": "^2.2.0",
+    "gulp-uglify": "^0.2.1"
+  }
+}

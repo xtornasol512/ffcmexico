@@ -1,6 +1,10 @@
 form input[type="text"].large, .form input[type="text"].large, form input[type="password"].large, .form input[type="password"].large, form input[type="date"].large, .form input[type="date"].large, form input[type="datetime"].large, .form input[type="datetime"].large, form input[type="email"].large, .form input[type="email"].large, form input[type="number"].large, .form input[type="number"].large, form input[type="search"].large, .form input[type="search"].large, form input[type="tel"].large, .form input[type="tel"].large, form input[type="time"].large, .form input[type="time"].large, form input[type="url"].large, .form input[type="url"].large, form select.large, .form select.large, form textarea.large, .form textarea.large {
 font-size: 1.1em;
 }
+body > section.landing h1 {
+        
+        color: #0588c0;
+    }
 
 body > header .logo {
             margin-top: .01em;
@@ -29,7 +33,7 @@ section.landing button {
 .button.large, button.large {
             font-size: 1.3em;}
 .training{
-    background: url(../images/portada.jpg) no-repeat;
+    background: url(../images/gym.jpg) no-repeat;
     -webkit-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
     -o-background-size: 100% 100%;
@@ -94,6 +98,9 @@ section.landing button {
 .Galeria i:hover{
     color: #3CAEE0;
     }
+.icon.facebook-sign:hover{
+    color: rgb(15, 0, 184);
+    }
 
 #cabezera .item img{
     display: block;     
@@ -105,6 +112,11 @@ section.landing button {
     font-size: 2.2em;
     font-style: normal;
     padding-right: .1em;
+    -webkit-transition:all 1s ease-out;
+    -o-transition:all 1s ease-out;
+    -moz-transition:all 1s ease-out; 
+    -ms-transition:all 1s ease-out; 
+    transition:all 1s ease-out;
     
 }
 #sociallinks a:hover{
@@ -119,6 +131,7 @@ section.landing button {
 @media only screen and (min-width: 960px) and (max-width: 1199px){
     body > section.landing h1 {
         font-size: 6em;
+        color: #0588c0;
     }
     body > section.landing h2 {
         font-size: 3em;
@@ -135,6 +148,7 @@ section.landing button {
 @media only screen and (min-width: 768px) and (max-width: 959px){
     body > section.landing h1 {
         font-size: 6em;
+        color: #0588c0;
     }
         body > section.landing h2 {
         font-size: 3em;
@@ -155,6 +169,7 @@ section.landing button {
                 max-height: 7em; }
     body > section.landing h1 {
         font-size: 3em;
+        color: #0588c0;
     }
     body > section.landing h2 {
         font-size: 2em;
@@ -175,6 +190,7 @@ section.landing button {
                 max-height: 7em; }
     body > section.landing h1 {
             font-size: 3em;
+            color: #0588c0;
         }
     body > section.landing h2 {
             font-size: 2em;
@@ -182,7 +198,7 @@ section.landing button {
     #videoFenix .row{
             width: 100%;}
     .training{
-        background: url(../images/portada_m.jpg) no-repeat;
+        background: url(../images/gym.jpg) no-repeat;
         -webkit-background-size: cover ;
         -moz-background-size: cover ;
         -o-background-size: cover ;
@@ -191,7 +207,7 @@ section.landing button {
 }
 @media only screen and (max-width: 342px){
     .training{
-        background: url(../images/portada_m.jpg) no-repeat;
+        background: url(../images/gym.jpg) no-repeat;
         -webkit-background-size: cover ;
         -moz-background-size: cover ;
         -o-background-size: cover ;
