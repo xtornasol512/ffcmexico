@@ -1,0 +1,72 @@
+body {
+    display: block;
+    font-family: 'Helvetica Neue';
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.fondo{
+    background: #2D3032 no-repeat center center fixed;
+    -webkit-background-size: cover;
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url('fondo_ffcmexico_404_logo_1400x933.jpg');
+}
+.wraper{
+    display: table;
+    margin: 0 auto;
+    height: 60%;
+}
+
+.tHeader{
+    padding: 0 30px;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+h1{
+    color: rgba(255, 255, 255, 0.85);
+    font-family: 'Open Sans',Lato,sans-serif;
+    font-size: 3.5em;
+    font-weight: 700;
+    line-height: 1.1em;
+    margin: 0 0 0.2em 0;
+    padding: 0;
+}
+h2{
+
+    color: rgba(255, 255, 255, 0.85);
+    font-family: 'Open Sans',Lato,sans-serif;
+    font-size: 2.1em;
+    font-weight: 500;
+    line-height: 1.1em;
+    margin: 0;
+    padding: 0;
+}
+a {
+    color: rgb(77, 171, 245);
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 1.2em;
+}
+a:link, a:visited, a:focus{
+    color: rgb(77, 171, 245);
+}
+a:hover{
+    color: rgb(100, 150, 250);
+}
+a:active{ color: rgb(77, 171, 245); }
+
+@media screen and (max-width: 900px) {
+        h1{font-size:50px;}
+        h2{font-size:19px;}}
+@media screen and (max-width: 650px) {
+
+        h1{font-size:28px;}
+        h2{font-size:19px;font-weight: 500;}}
