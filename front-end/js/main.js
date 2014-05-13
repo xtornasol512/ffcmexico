@@ -13,6 +13,7 @@
             var extra = {
 
                 icon: "/img/logos/svg/logo_fenix_01_portrait_32bits.png",
+
                 body: "Tu email ha sido enviado, espera noticias nuestras en tu mail"
 
             }

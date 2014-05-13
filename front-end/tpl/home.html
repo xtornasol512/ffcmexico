@@ -67,7 +67,7 @@
             <h1 class="title">FFC Mexico </h1>
           </section>
           <section class="right-small">
-            <a href="/" class="" ><img src="  " alt=""></a>
+            <a href="/" class="" ><img src="/img/logos/fenix_logo1_128x76_justify_fblanco.png" alt="Logo FFCMexico"></a>
           </section>
         </nav>
         <aside class="left-off-canvas-menu">
@@ -82,7 +82,7 @@
           </ul>
         </aside>
         <section class="main-section">
-            <div class="row HOME">
+            <div class="row full-widht">
                 <!--<div class="small-12 colums"> -->
                     <a name="galeria"></a>
                     <span data-magellan-destination="galeria"></span>
@@ -90,14 +90,14 @@
                       <li>
                         <img src="/img/galeria/home/gym.jpg" alt="Bienvenido a FFC Mexico, foto del GYM" />
                         <div class="orbit-caption main text-center">
-                          <h1 style="color: white;">Bienvenido a <em><a href="/tpl/home.html">Fenix Fight Club México</a></em></h1>
+                          <h1 style="color: white;" class="hide-for-small-only">Bienvenido a <em><a href="/tpl/home.html">Fenix Fight Club México</a></em></h1>
                           <div class="large-6 large-centered columns">
                               <div class="row collapse">
                                 <div class="small-10 columns">
                                   <input type="email" placeholder="Tu email@dominio.com para Suscripción de Noticias y Más">
                                 </div>
                                 <div class="small-2 columns">
-                                  <a href="#" class="button postfix" onclick="newsletterConfirm()">Suscribite!</a>
+                                  <a href="#" class="button postfix" data-reveal-id="freeWeek" onclick="newsletterConfirm()"><i class="fi-mail"></i><span class="hide-for-small-only">Suscribite!</span></a>
                                 </div>
                               </div>
                         </div>
@@ -124,17 +124,82 @@
                   <ul class="button-group round">
                     <li><a href="#" class="tiny button secondary">Jiu Jitsu</a></li>
                     <li><a href="#" class="tiny button secondary">MMA</a></li>
-                    <li><a href="#" class="tiny button secondary">Button 3</a></li>
+                    <li><a href="#" data-reveal-id="freeWeek" class="tiny button secondary">Free</a></li>
                   </ul>
 
                 </div>
               </div>
             </div>
+          <footer id="#Contactanos" class="Contacto">
+            <div class="row">
+              <div class="medium-6 column">
+                <h3>Ubicacion</h3>
+                <p>Priv. de la 14 Poniente Tehuacán, Pue.</p>
+                <h3>email</h3>
+                <p><a href="mailto:brian@ffcmexico.com?subject=Solicitud de Contacto"></a>brian@ffcmexico.com</p>
+                <br />
+                <ul>
+                  <li><a href="#">Programas</a></li>
+                  <li><a href="#">Instructores</a></li>
+                  <li><a href="#">Semana Gratis</a></li>
+                  <li><a href="#">Servicios</a></li>
+                  <li><a href="#">Preguntas Frecuentes</a></li>
+                  <li><a href="#">Horas de Clase</a></li>
+                  <li><a href="#">Precios y Paquetes</a></li>
+                  <li><a href="#">Acerca de Nosotros</a></li>
+                  <li><a href="#" data-reveal-id="videoModal">Vídeos</a></li>
+                  <li><a href="#">Galeria de Imágenes</a></li>
+                </ul>
+              </div>
+              <div class="medium-6 column">
+                  <form data-abide>
+                    <fieldset>
+                    <legend>Contactanos</legend>
+                      <div class="name-field">
+                      <label>Nombre <small>y Apellidos</small><input type="text" required pattern="[a-zA-Z]+" name="nom_contacto"></label>
+                      <small class="error">Parece que no se escribio bien tu nombre, verificalo.</small></div>
+                      <div class="email-field"> <label>Email <small>personal</small> <input type="email" name="email_contacto" required> </label>
+                      <small class="error">Parece que no escribiste bien tu mail.</small> </div>
+                      <label>Telefono <small>10 Dígitos</small><input type="tel"></label>
+                      <label>Comentario, Pregunta o Duda <textarea type="text" placeholder="Escribenos tus comentarios aquí" ></textarea></label>
+                      <button type="submit" onclick="NewsletterConfirm()" >Enviar Pregunta o Comentario</button>
+                    </fieldset>
+                    </form>
+              </div>
+            </div>
+          </footer>
         </section>
 
         <a class="exit-off-canvas"></a>
       </div>
     </div>
+
+    <!-- Reveal Modals begin -->
+    <div id="freeWeek" class="reveal-modal" data-reveal>
+      <h2>Obten tu Semana Gratis</h2>
+      <p>Sólo necesitamos un paso más, rellana esta información y te ayudaremos a escoger el mejor plan para ti.</p>
+      
+      <p><a href="#" data-reveal-id="secondModal" class="secondary button"><i class="fi-mail"></i>Enviar</a></p>
+      <a class="close-reveal-modal">&#215;</a>
+    </div>
+
+    <div id="secondModal" class="reveal-modal" data-reveal>
+      <h2>Gracias por registrarte! </h2>
+      <p>Ahora espera a que nuestro personal te lleve paso a paso a como unirte a nuestro Equipo Fenix Fight CLub, si tienes más dudas o comentarios haznos saber por nuestras redes sociales </p>
+      <a class="close-reveal-modal">&#215;</a>
+    </div>
+
+    <div id="videoModal" class="reveal-modal large" data-reveal>
+      <h2>Vídeos de Fenix Fight Club Tehuacán</h2>
+      <div class="flex-video">
+        <iframe width="420" height="315" src="http://www.youtube.com/watch?v=xwN_lkESypE" frameborder="0" allowfullscreen></iframe>
+      </div>
+
+      <a class="close-reveal-modal">&#215;</a>
+    </div>
+<!-- Reveal Modals end -->
+
+
     
     
     <!-- JS Load Develop-->
