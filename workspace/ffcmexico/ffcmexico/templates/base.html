@@ -1,0 +1,71 @@
+<!doctype html>
+<!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{% block title%}FFCMexico -{% endblock title %} </title>
+    <!-- SEO tags-->
+    <meta name="description" content="{% block descripcion %} {% endblock descripcion %}" >
+    <meta name="keywords" content="{% block keywords %} {% endblock keywords %}">
+    <meta property="og:title" content="{% block og_title %}{% endblock og_title %}">
+    <meta property="og:description" content="{% block og_descripcion %} {% endblock og_descripcion %}">
+    <meta property="og:image" content="{% block og_img %} {% endblock og_img %}">
+    <link rel="author" href="https://plus.google.com/b/116396715921090650495/116396715921090650495/posts" />
+    <link rel="author" href="http://ffcmexico.com/humans.txt" />
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="http://ffcmexico.com/sitemap.xml">
+
+    <!-- Development -->
+    <link rel="stylesheet" href="{{STATIC_URL}}css/normalize.css">
+    <link rel="stylesheet" href="{{STATIC_URL}}css/foundation.css" />
+    <link rel="stylesheet" href="{{STATIC_URL}}css/foundation-icons.css">
+    <link rel="stylesheet" href="{{STATIC_URL}}dist/css/miestilo.css">
+    <script src="{{STATIC_URL}}js/vendor/modernizr.js"></script>
+    
+    <!-- End of Development -->
+
+    <!-- Deploy 
+    <link rel="stylesheet" href="{{STATIC_URL}}dist/css/foundation.css" />
+    <link rel="stylesheet" href="{{STATIC_URL}}dist/css/foundation-icons.css">
+    <link rel="stylesheet" href="{{STATIC_URL}}dist/css/miestilo.min.css">
+    <script src="{{STATIC_URL}}dist/js/vendor/modernizr.js"></script>
+
+    End of Deploy-->
+    
+    <!-- Apple Icons -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="apple-touch-startup-image" media="(max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2)" href="/img/icons/startup-retina.png">
+    <!-- For iPad with high-resolution Retina display running iOS ≥ 7: -->
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="{{STATIC_URL}}img/icons/apple-touch-icon-152x152-precomposed.png">
+    <!-- For iPad with high-resolution Retina display running iOS ≤ 6: -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{STATIC_URL}}img/icons/apple-touch-icon-144x144-precomposed.png">
+    <!-- For iPhone with high-resolution Retina display running iOS ≥ 7: -->
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="{{STATIC_URL}}img/icons/apple-touch-icon-120x120-precomposed.png">
+    <!-- For iPhone with high-resolution Retina display running iOS ≤ 6: -->
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{STATIC_URL}}img/icons/apple-touch-icon-114x114-precomposed.png">
+    <!-- For the iPad mini and the first- and second-generation iPad on iOS ≥ 7: -->
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="{{STATIC_URL}}img/icons/apple-touch-icon-76x76-precomposed.png">
+    <!-- For the iPad mini and the first- and second-generation iPad on iOS ≤ 6: -->
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{STATIC_URL}}img/icons/apple-touch-icon-72x72-precomposed.png">
+    <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+    <link rel="apple-touch-icon-precomposed" href="{{STATIC_URL}}img/icons/apple-touch-icon-precomposed.png">
+
+    <!-- End of Apple Icons-->
+
+    <!-- Others Tags -->
+    <link rel="shortcut icon" href="http://ffcmexico.com/favicon.ico">
+    <link type="text/plain" rel="author" href="humans.txt">
+</head>
+<body>
+    {% block contenido %}{% endblock %}
+    <!-- JS Load Develop-->
+    <script src="{{STATIC_URL}}js/vendor/jquery.js"></script>
+    <script src="{{STATIC_URL}}js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+    <script src="{{STATIC_URL}}js/main.js"></script>
+    
+</body>
+</html>

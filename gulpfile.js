@@ -18,7 +18,7 @@ var srcCSS = 'front-end/css/miestilo.css',
 
 gulp.task('styl', function(){
     gulp.src(srcCSS)
-        .pipe(prefix(['safari 5', 'ff 21', 'ie 9', 'opera 12.1', 'ios 5', 'android 2.2'],{ cascade: true })) //
+        .pipe(prefix(['> 0.5%','safari 5', 'ff 21', 'ie 9', 'opera 12.1', 'ios 5', 'android 2.2'],{ cascade: true })) //
         .pipe(gulp.dest('front-end/dist/css/'))
         .pipe(minifycss())
         .pipe(rename({suffix: '.min'}))
