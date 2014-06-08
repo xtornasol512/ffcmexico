@@ -1,19 +1,67 @@
-.orbit-container .orbit-slides-container li .orbit-caption {
-        position: absolute;
-        bottom: 0;
-        background-color: rgba(51, 51, 51, 0.2);
-        color: white;
-        width: 100%;
-        padding: 0.625rem 0.875rem;
-        font-size: 0.875rem;}
-
-.off-canvas-list li label a img {
-    border-radius: 50% 50%;
+.hero{
+    padding-top: 6em;
+    padding-bottom: 7em;
 }
-.row .full-widht{
-    max-width: 100%;
-    min-width: 100%;
-    width: 100%;
+
+.bg-home{
+    
+}
+.bg-contacto{
+    background: url(/static/img/bgs/bg-contacto.jpg) 0 0 no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+.bg-horario{
+    background: url(/static/img/bgs/bg-horario.jpg) 0 0 no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+.bg-codigo{
+    background: url(/static/img/bgs/bg-codigo.jpg) 0 0 no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+.bg-faqs{
+    background: url(/static/img/bgs/bg-faqs.jpg) 0 0 no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+.bg-about{
+    background: url(/static/img/bgs/bg-about.jpg) 0 0 no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+.bg-fotos{
+    background: url(/static/img/bgs/bg-fotos.jpg) 0 0 no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+.bg-videos{
+    background: url(/static/img/bgs/bg-videos.jpg) 0 0 no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+@media only screen and (min-width: 641px){
+  .dropdown-wrapper
+  {
+    background-color: #666 !important;
+    width: 540px !important;
+    padding: 10px 0;
+  }
+}
+.text-align-center{
+    text-align: center;
+}
+.heading{
+  font-size: 4em;
+  color: white;
+}
+.heading h1{
+    color: white;
+}
+.alert-box{
+    margin-bottom: 0px;
 }
 /* Small screens*/
 @media only screen { } /* Define mobile styles */
