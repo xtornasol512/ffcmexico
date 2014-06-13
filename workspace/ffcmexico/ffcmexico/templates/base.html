@@ -186,7 +186,7 @@
                   <p>Tienes alguna duda o comentario o sugerencia haznola saber, te responderemos lo más pronto posible.</p>
                   <a href="#" data-options="align:top" data-dropdown="drop2" class="button small">Ayudanos a mejorar con tu sugerencia</a>
                   <div id="drop2" data-dropdown-content class="f-dropdown large content">
-                    <form action="." method="POST">
+                    <form action="{{STATIC_URL}}scphp/mail.php" method="POST">
                       {% csrf_token %}
                       <div class="row">
                         <div class="large-12 columns">

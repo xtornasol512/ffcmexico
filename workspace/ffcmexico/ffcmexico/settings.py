@@ -57,8 +57,10 @@ WSGI_APPLICATION = 'ffcmexico.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'phyroser_ffcmexico',
+        'USER': 'phyroser_vash512',
+        'PASSWORD': 'rock513',
     }
 }
 
@@ -101,7 +103,8 @@ TEMPLATE_DIRS = (
 )
 
 EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'email@gmail.com'
-EMAIL_HOST_PASSWORD = 'passwd'
-EMAIL_PORT = 587
-EMAIL_USE_TLS = True
+EMAIL_HOST_USER = 'phyrox.vash512@gmail.com'
+EMAIL_HOST_PASSWORD = 'phyrox.rock513'
+EMAIL_PORT = 465
+EMAIL_USE_TLS = False
+EMAIL_USE_SSL = True
