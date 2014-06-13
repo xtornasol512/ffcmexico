@@ -22,6 +22,11 @@ def index_view(request):
     return render_to_response('home/index.html',
                           cxt,
                           context_instance=RequestContext(request))
+#Privacidad
+def terminos(request):
+    return render_to_response('privacidad/terminos_privacidad.html',
+                          my_data,
+                          context_instance=RequestContext(request))
 
 #Paginas Base
 def contacto(request):
@@ -29,6 +34,10 @@ def contacto(request):
                           my_data,
                           context_instance=RequestContext(request))
 
+def sink(request):
+    return render_to_response('blocks/sink.html',
+                          my_data,
+                          context_instance=RequestContext(request))
 def horario(request):
     return render_to_response('home/horario.html',
                           my_data_dict,
@@ -55,6 +64,10 @@ def freeweek(request):
 
 def maps(request):
     return render_to_response('home/mapa.html',
+                          my_data_dict,
+                          context_instance=RequestContext(request))
+def galeria(request):
+    return render_to_response('galeria/galeria.html',
                           my_data_dict,
                           context_instance=RequestContext(request))
 #Galeria
@@ -157,6 +170,9 @@ def masaje(request):
 """
 =====REDIRECT's RULES===========
 """
+#Redirect HOME
+def galeriaRedirect(request):
+  return redirect301('/galeria')
 #Redirects Servicios
 def videosRedirect(request):
     return redirect301('/galeria/videos')

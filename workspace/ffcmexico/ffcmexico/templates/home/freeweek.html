@@ -1,26 +1,53 @@
-{% extends 'base.html' %}
-<!-- Head-->
-{% block title %}{% block og_title %}Semana Gratis{% endblock %}{% endblock %}
-{%block rel_canonical%}http://ffcmexico.com/freeweek{%endblock%}
-{%block og_type%}{%endblock%}
-{% block descripcion %}{% block og_descripcion %}Disfruta tu Semana Gratis, Registrate y ven a conocernos{% endblock %} {% endblock %}
-{% block keywords %}Semana Gratis, Gym, Cursos, Seminarios, Clases, Entrenamiento, Kids{% endblock %}
-{% block og_img %}{% endblock %}
-{%block morecss%}{%endblock%}
-<!-- body-->
-{% block contenido %}
-    <section class="hero bg-horario">
-        <div class="row">
-            <div class="medium-10 small-centered columns heading text-align-center">
-                <h1>Semana Gratis</h1>
-            </div>
-        </div>
-    </section>
-    <section>
-        <div class="row">
-            
-        </div>
-    </section>
-{% endblock %}
-{%block afterfoundationjs%}{%endblock%}
-{%block morejs%}{%endblock%}
+{% extends "home/freeweek_01.html" %}
+{% block freeweek %}
+<form action="{{STATIC_URL}}scphp/mail.php" method="POST">
+  <fieldset>
+    <legend>Obten tu Semana Gratis</legend>
+    <div class="row">
+      <div class="large-12 columns">
+        <label>* Nombre
+          <input name="nombre" type="text" placeholder="Escribe aquí tu nombre Ej. Juan López" required />
+        </label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="large-12 columns">
+        <label>* Email
+          <input name="email" type="text" placeholder="Escribe aquí tu nombre Ej. Juan López" required />
+        </label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="large-4 columns">
+        <label>Edad <small>De 5 en adelante</small>
+          <input type="number" placeholder="De 5 en Adelante" />
+        </label>
+      </div>
+      <div class="large-4 columns">
+        <label>Telefono <small>10 Dígitos</small>
+          <input type="tel" placeholder="Tel: 2383821012" />
+        </label>
+      </div>
+      <div class="large-4 columns">
+        <label>Genero
+          <select name="genero">
+            <option value="hombre">Hombre</option>
+            <option value="mujer">Mujer</option>
+            <option value="kid">Niño(a)</option>
+
+          </select>
+        </label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="large-12 columns">
+        <label>Escribenos tus Objetivos
+          <textarea placeholder="Cuentanos que objetivos tienes para ayudarte a escoger lo mejor para ti."></textarea>
+        </label>
+      </div>
+    </div>
+    <p>* Indica campos necesarios</p>
+    <button name="envSemana" class="expand">Enviar a Fenix Fight Club</button>
+  </fieldset>
+</form>
+{% endblock  %}

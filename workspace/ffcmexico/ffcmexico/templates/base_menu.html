@@ -1,0 +1,159 @@
+{% extends "base_extras.html" %}
+{% block contenido_base %}
+    <div class="off-canvas-wrap" data-offcanvas>
+      <div class="inner-wrap">
+        <nav class="tab-bar show-for-medium-down">
+          <section class="left tab-bar-section">
+            <h1 class="title"><a href="/"><img width="50" height="36" src="{{STATIC_URL}}img/base/logo-db.png" alt="Logo Fenix Fight Club México"> </a>{% block title%}FFCMéxico{% endblock%}</h1>
+          </section>
+
+          <section class="right-small">
+            <a class="right-off-canvas-toggle menu-icon" href="#"><span></span></a>
+          </section>
+        </nav>
+        <nav class="top-bar hide-for-medium-down" data-topbar="">
+          <ul class="title-area">
+          <li class="name">
+            <h1><a href="/" data-dropdown="drop1" class="dropdow" data-options="is_hover:true"><img width="50" height="35" src="{{STATIC_URL}}img/base/logo-retina.png" alt="Logo Fenix Fight Club México"> Fenix Fight Club México</a></h1>
+            <ul id="drop1" data-dropdown-content class="f-dropdown">
+              <li><a href="/">Home</a></li>
+              <li><a href="/contacto">Contacto</a></li>
+              <li><a href="/horario">Horario</a></li>
+              <li><a href="/galeria">Galerias</a></li>
+              <li><a href="/faqs">FAQ's</a></li>
+              <li><a href="/codigo">Código de Conducta</a></li>
+            </ul>
+          </li>
+          </ul>
+
+          <section class="top-bar-section">
+            <ul class="right">
+              <li class="divider"></li>
+              <li class="has-dropdown not-click">
+                <a href="/programas" class="">PROGRAMAS</a>
+                <ul class="dropdown"><li class="title back js-generated"><h5><a href="javascript:void(0)">Regresar</a></h5></li>
+                  <li><a href="/programas/kids">Kids</a></li>
+                  <li><a href="/programas/sumision">Sumision</a></li>
+                  <li><a href="/programas/box">Box</a></li>
+                  <li><a href="/programas/judo">Judo</a></li>
+                  <li><a href="/programas/crossfit">Crossfit</a></li>
+                  <li><a href="/programas/bjj">Jiu JItsu Brasileño</a></li>
+                  <li><a href="/programas/artesmarcialesmixtas">Artes Marciales Mixtas</a></li>
+                </ul>
+              </li>
+              <li class="divider"></li>
+              <li class="has-dropdown not-click">
+                <a href="/servicios" class="">SERVICIOS</a>
+                <ul class="dropdown"><li class="title back js-generated"><h5><a href="javascript:void(0)">Regresar</a></h5></li>
+                  <li><a href="/servicios/nutricion">Nutrición</a></li>
+                  <li><a href="/servicios/masaje">Masaje</a></li>
+                  <li><a href="/servicios/fisioterapia">Fisioterapia</a></li>
+                </ul>
+              </li>
+              <li class="divider"></li>
+              <li class="has-dropdown not-click">
+                <a href="/instructores" class="">INSTRUCTORES</a>
+                <ul class="dropdown"><li class="title back js-generated"><h5><a href="javascript:void(0)">Regresar</a></h5></li>
+                  <li><a href="/instructores/brian">Brian</a></li>
+                  <li><a href="/instructores/pako">Pako</a></li>
+                  <li><a href="/instructores/edu">Edu</a></li>
+                </ul>
+              </li>
+              <li class="divider"></li>
+              <li class="has-dropdown not-click">
+                <a href="/contacto" class="">CONTACTANOS</a>
+                <ul class="dropdown"><li class="title back js-generated"><h5><a href="javascript:void(0)">Regresar</a></h5></li>
+                  <li><a href="/mapa">Mapa</a></li>
+                  <li><a href="/contacto">Contactanos</a></li>
+                  
+                </ul>
+              </li>
+              <li class="divider"></li>
+              
+              <li class="has-form">
+                <a href="#" data-reveal-id="myModalFreeWeek" class="small button">¡¡Semana Gratis!!</a>
+              </li></ul>
+            </section></nav>
+            <div id="myModalFreeWeek" class="reveal-modal" data-reveal>
+              <form action="{{STATIC_URL}}scphp/mail.php" method="POST">
+                <fieldset>
+                  <legend>Obten tu Semana Gratis</legend>
+                  <div class="row">
+                    <div class="large-12 columns">
+                      <label>* Nombre
+                        <input name="nombre" type="text" placeholder="Escribe aquí tu nombre Ej. Juan López" required />
+                      </label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="large-12 columns">
+                      <label>* Email
+                        <input name="email" type="text" placeholder="Escribe aquí tu nombre Ej. Juan López" required />
+                      </label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="large-4 columns">
+                      <label>Edad <small>De 5 en adelante</small>
+                        <input type="number" placeholder="De 5 en Adelante" />
+                      </label>
+                    </div>
+                    <div class="large-4 columns">
+                      <label>Telefono <small>10 Dígitos</small>
+                        <input type="tel" placeholder="Tel: 2383821012" />
+                      </label>
+                    </div>
+                    <div class="large-4 columns">
+                      <label>Genero
+                        <select name="genero">
+                          <option value="hombre">Hombre</option>
+                          <option value="mujer">Mujer</option>
+                          <option value="kid">Niño(a)</option>
+
+                        </select>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="large-12 columns">
+                      <label>Escribenos tus Objetivos
+                        <textarea placeholder="Cuentanos que objetivos tienes para ayudarte a escoger lo mejor para ti."></textarea>
+                      </label>
+                    </div>
+                  </div>
+                  <p>* Indica campos necesarios</p>
+                  <button name="envSemana" class="expand">Enviar a Fenix Fight Club</button>
+                </fieldset>
+              </form>
+              <a class="close-reveal-modal">&#215;</a>
+            </div>
+
+        <aside class="right-off-canvas-menu">
+          <ul id="menuMovil" class="off-canvas-list">
+            <li id="logo-menu">
+              <div class="panel">
+                <a href="/" class="text-center logo_menu"><img width="98" height="70" src="{{STATIC_URL}}img/base/logo-menu.png" alt="Logo FFCMéxico" class="rotarY"></a>
+                <h5 class="text-center fenix"><strong>FFC</strong>México</h5>
+                <p class="text-center">"Nadie logra grandes metas quedandose quieto"</p>
+              </div>
+            </li>
+            <li><a href="/programas"><i class="fi-trophy"></i>Programas</a></li>
+            <li><a href="/instructores"><i class="fi-torsos-all"></i>Instructores</a></li>
+            <li><a href="/servicios"><i class="fi-star"></i>Servicios</a></li>
+            <li><a href="/horario"><i class="fi-clock"></i>Horario</a></li>
+            <li><a href="/contacto"><i class="fi-mail"></i>Contacto</a></li>            
+            <li><a href="/faqs"><i class="fi-sheriff-badge"></i>FAQs</a></li>
+            <li><a href="/codigo"><i class="fi-paw"></i>Código de Conducta</a></li>
+            <li><a href="/about"><i class="fi-foot"></i>Acerca de Nosotros</a></li>
+            <li><a href="/freeweek" class="button small">¡¡Semana Gratis!! <i class="fi-heart"></i></a></li>
+            
+          </ul>
+        </aside>
+        <section class="main-section">
+          {% block contenido %}{% endblock contenido %}
+          {% block footer %}{% endblock footer%}
+        </section>
+      <a class="exit-off-canvas"></a>
+      </div>
+    </div>
+{% endblock%}
