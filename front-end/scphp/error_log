@@ -9,3 +9,11 @@
 [10-Jun-2014 17:22:58 America/Denver] PHP Notice:  Undefined index: msg in /home4/phyroser/djangoprojects/ffcmexico/front-end/scphp/correo3.php on line 8
 [10-Jun-2014 17:27:19 America/Denver] PHP Notice:  Use of undefined constant seEnvioM - assumed 'seEnvioM' in /home4/phyroser/djangoprojects/ffcmexico/front-end/scphp/mail.php on line 74
 [10-Jun-2014 17:27:19 America/Denver] PHP Notice:  Use of undefined constant seEnvioR - assumed 'seEnvioR' in /home4/phyroser/djangoprojects/ffcmexico/front-end/scphp/mail.php on line 74
+[12-Jun-2014 23:10:18 America/Denver] PHP Notice:  Undefined index: email in /home4/phyroser/djangoprojects/ffcmexico/front-end/scphp/mail.php on line 107
+[12-Jun-2014 23:12:51 America/Denver] PHP Notice:  Undefined index: email in /home4/phyroser/djangoprojects/ffcmexico/front-end/scphp/mail.php on line 107
+[12-Jun-2014 23:16:16 America/Denver] PHP Notice:  Undefined index: comentarios in /home4/phyroser/djangoprojects/ffcmexico/front-end/scphp/mail.php on line 63
+[12-Jun-2014 23:16:16 America/Denver] PHP Notice:  Undefined index: edad in /home4/phyroser/djangoprojects/ffcmexico/front-end/scphp/mail.php on line 64
+[12-Jun-2014 23:16:16 America/Denver] PHP Notice:  Undefined index: telefono in /home4/phyroser/djangoprojects/ffcmexico/front-end/scphp/mail.php on line 65
+[12-Jun-2014 23:26:47 America/Denver] PHP Notice:  Undefined index: comentarios in /home4/phyroser/djangoprojects/ffcmexico/front-end/scphp/mail.php on line 63
+[12-Jun-2014 23:26:47 America/Denver] PHP Notice:  Undefined index: edad in /home4/phyroser/djangoprojects/ffcmexico/front-end/scphp/mail.php on line 64
+[12-Jun-2014 23:26:47 America/Denver] PHP Notice:  Undefined index: telefono in /home4/phyroser/djangoprojects/ffcmexico/front-end/scphp/mail.php on line 65
