@@ -1,305 +1,157 @@
-<!doctype html>
-<html lang="es">
-<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>{% block title%}FFCMexico{% endblock title %} </title>
-    <!-- SEO tags-->
-    <link rel="canonical" href="{% block rel_canonical%}{% endblock rel_canonical%}" />
-    <meta name="description" content="{% block descripcion %} {% endblock descripcion %}" >
-    <meta name="keywords" content="{% block keywords %} {% endblock keywords %}">
-    <meta property="fb:app_id" content="{%block fb_app_id%}504922086287468{% endblock fb_app_id%}" />
-    <meta property="og:type"   content="{%block og_type%}website{%endblock og_type%}" /> 
-    <meta property="og:title" content="{% block og_title %}{% endblock og_title %}">
-    <meta property="og:description" content="{% block og_descripcion %} {% endblock og_descripcion %}">
-    <meta property="og:image" content="{% block og_img %} {% endblock og_img %}">
-    <link rel="author" href="{%block rel_author%}https://plus.google.com/b/116396715921090650495/116396715921090650495/posts{%endblock rel_author%}" />
-    <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
-    <link rel="stylesheet" href="{{STATIC_URL}}css/normalize.css">
-    <link rel="stylesheet" href="{{STATIC_URL}}css/foundation.css" />
-    <link rel="stylesheet" href="{{STATIC_URL}}css/foundation-icons.css">
-    <link rel="stylesheet" href="{{STATIC_URL}}dist/css/miestilo.css">
-    {%block morecss%}{%endblock morecss%}
-    <script src="{{STATIC_URL}}js/vendor/modernizr.js"></script>
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <link rel="apple-touch-startup-image" media="(max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2)" href="{{STATIC_URL}}/img/icons/startup-retina.png">
-    <!-- For iPad with high-resolution Retina display running iOS ≥ 7: -->
-    <link rel="shortcut icon" href="{{STATIC_URL}}/img/icons/favicon.ico">
-    <link rel="apple-touch-icon" sizes="57x57" href="{{STATIC_URL}}/img/icons/apple-touch-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="{{STATIC_URL}}/img/icons/apple-touch-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="{{STATIC_URL}}/img/icons/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="{{STATIC_URL}}/img/icons/apple-touch-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="{{STATIC_URL}}/img/icons/apple-touch-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="{{STATIC_URL}}/img/icons/apple-touch-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="{{STATIC_URL}}/img/icons/apple-touch-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="{{STATIC_URL}}/img/icons/apple-touch-icon-152x152.png">
-    <link rel="icon" type="image/png" href="{{STATIC_URL}}/img/icons/favicon-196x196.png" sizes="196x196">
-    <link rel="icon" type="image/png" href="{{STATIC_URL}}/img/icons/favicon-160x160.png" sizes="160x160">
-    <link rel="icon" type="image/png" href="{{STATIC_URL}}/img/icons/favicon-96x96.png" sizes="96x96">
-    <link rel="icon" type="image/png" href="{{STATIC_URL}}/img/icons/favicon-16x16.png" sizes="16x16">
-    <link rel="icon" type="image/png" href="{{STATIC_URL}}/img/icons/favicon-32x32.png" sizes="32x32">
-    <meta name="msapplication-TileColor" content="#2d89ef">
-    <meta name="msapplication-TileImage" content="{{STATIC_URL}}/img/icons/mstile-144x144.png">
-    <meta name="msapplication-config" content="{{STATIC_URL}}/img/icons/browserconfig.xml">
-    <link type="text/plain" rel="author" href="/humans.txt">
-</head>
-<body>
-    <div id="fb-root"></div>
-    <script>(function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&appId=504922086287468&version=v2.0";
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
-    {%if enviado%}
-    <div data-alert class="alert-box success">
-      Tu mensaje ha sido enviado correctamente
-      <a href="#" class="close">&times;</a>
-    </div>
-    {%elif noenviado%}
-    <div data-alert class="alert-box alert">
-     Tu mensaje no ha sido enviado, vuelvelo a intentar.
-      <a href="#" class="close">&times;</a>
-    </div>
-    {%endif%}
-    <div class="off-canvas-wrap">
-      <div class="inner-wrap">
-        <nav class="top-bar hide-for-medium-down" data-topbar>
-          <ul class="title-area">
-            <li class="name"><h1><a href="/">Fenix Fight Club</a></h1>
-            </li>
-            <li class="toggle-topbar menu-icon"><a href="#">Menú</a></li>
-          </ul>
-          <section class="top-bar-section">
-            <ul class="left">
-              <li><a href="/horario">Horario</a></li>
-              <li><a href="/codigo">Código</a></li>
-              <li><a href="/about">About</a></li>
-              <li><a href="/faqs">FAQs</a></li>
-              <li class="divider"><li>
-              <li class="has-dropdown not-click"><a href="#">Menú</a>
-                <ul class="dropdown dropdown-wrapper">
-                  <li>
-                    <div>
-                      <div class="small-6 columns">
-                        <ul>
-                          <li><h3>Programas</h3></li>
-                          <li><a href="/programas/box">Box</a></li>
-                          <li><a href="/programas/kids">Kids</a></li>
-                          <li><a href="/programas/judo">Judo</a></li>
-                          <li><a href="/programas/crossfit">Crossfit</a></li>
-                          <li><a href="/programas/sumision">Sumision</a></li>
-                          <li class="active"><a href="/programas/jiujitsu">Jiu Jitsu Brasileño</a></li>
-                          <li><a href="/programas/artesmarcialesmixtas">Artes Marciales Mixtas</a></li>
-                        </ul>
-                      </div>
-                      <div class="small-6 columns">
-                        <ul>
-                          <li><h3>Instructores</h3></li>
-                          <li class="active"><a href="/instructores/brian">Brian</a></li>
-                          <li><a href="/instructores/pako">Pako</a></li>
-                          <li><a href="/instructores/pako">Edu</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-              </li>
-              <li class="divider"><li>
-            </ul>
-            <ul class="right">
-              <li class="active"><a href="/contacto">Obten tu Semana Gratis</a></li>
-              <li class="has-dropdown">
-                <a href="/servicios">Servicios</a>
-                <ul class="dropdown">
-                  <li><a href="/servicios/masaje">Masaje</a></li>
-                  <li><a href="/servicios/fisioterapia">Fisioterapia</a></li>
-                  <li><a href="/servicios/masaje">Nutrición</a></li>
-                </ul>
-              </li>
-            </ul>
-          </section>
-        </nav>
-        <nav class="tab-bar hide-for-large-up">
-          <section class="tab-bar-section">
-            <h1 class="title">Fenix Fight Club México</h1>
-            </section>
-          <section class="right-small">
-            <a class="right-off-canvas-toggle menu-icon" ><span></span></a>
-          </section>
-        </nav>
-        <aside class="right-off-canvas-menu">
-          <ul class="off-canvas-list">
-            <li><label>Home</label></li>
-            <li><a href="/horario">Horarios</a></li>
-            <li><a href="/contacto">Contactanos</a></li>
-            <li><a href="/about">Nosotros</a></li>
-            <li><a href="/codigo">Código de Conducta</a></li>
-            <li><a href="/faqs">Preguntas Frecuentes</a></li>
-            <li><label>Servicios</label></li>
-            <li><a href="/servicios/masaje">Masaje</a></li>
-            <li><a href="/servicios/nutricion">Nutrición</a></li>
-            <li><a href="/servicios/fisioterapia">Fisioterapia</a></li>
-            <li><label>Programas</label></li>
-            <li><a href="/programas/kids">Entrenamiento para niños</a></li>
-            <li><a href="/programas/box">Box</a></li>
-            <li><a href="/programas/crossfit">Crossfit</a></li>
-            <li><a href="/programas/judo">Judo</a></li>
-            <li><a href="/programas/artesmarcialesmixtas">Artes Marciales Mixtas</a></li>
-            <li><a href="/programas/jiujitsu">Jiu Jitsu Brasileño</a></li>
-            <li><label>Galerias</label></li>
-            <li><a href="/galeria/fotos">Fotos</a></li>
-            <li><a href="/galeria/videos">Vídeos</a></li>
+{% extends "base_menu.html" %}
+{% block contenido %}{% endblock %}
+{%block footer%} 
+<footer id="foo">
+  <div id="newsletter">
+    <div class="row">
+      <div class="small-12 text-center">
+        <h4>¡Envianos tu email para que te pongamos al tanto de eventos, promociones y más!</h4>
+        <div class="medium-10 small-centered columns">
+        <form action="{{STATIC_URL}}scphp/mail.php" method="POST">
+          <div class="row collapse">
+            <div class="small-9 columns">
+              <input type="text" placeholder="Tu email Ej. mi@email.com">
+            </div>
+            <div class="small-3 columns">
+              <a href="#" name="envSuscripcion" class="button postfix"><i class="fi-mail icon-large"></i>SUSCRÍBETE</a>
+            </div>
+          </div>
+        </form>
+        </div>
 
-          </ul>
-        </aside>
-        <section class="main-section">
-          {% block contenido %}{% endblock %}
-          <footer id="foo">
-            <div class="newsletter">
-              <div class="row">
-                <h2></h2>
-                <form action=""></form>
+      </div>
+    </div>
+  </div>
+  <div class="foo2">
+    <div class="row">
+      <div class="medium-4 columns text-center">
+        <h4><a href="/">Fenix Fight Club México</a></h4>
+        <p>Somos un Club de Deportes Úbicado en la Priv. de la 14 Poniente Tehuacán,Pue.</p>
+        <div class="panel callout radius">
+          <p>Encuentranos en <a href="/mapa">Google Maps</a></p>
+        </div>
+      </div>
+      <div class="medium-4 columns text-center">
+        <h4><a href="/">Semana Gratis</a></h4>
+        <p>Ven y obten tu semana gratis, así te ayudamos a escoger el mejor programa para ti</p>
+        
+          
+        <button href="#" data-reveal-id="myModalFreeWeek" class="small expand">Obten tu Semana Gratis</button>
+        
+      </div>
+      <div class="medium-4 columns text-center">
+        <h4><a href="/">Dudas o Comentarios</a></h4>
+        <p>Tienes alguna duda o comentario o sugerencia háznosla saber, te responderemos lo más pronto posible.</p>
+        <a href="#" data-options="align:top" data-dropdown="drop2" class="button small expand">Ayudanos a mejorar con tu sugerencia</a>
+        <div id="drop2" data-dropdown-content class="f-dropdown large content">
+          <form action="{{STATIC_URL}}scphp/mail.php" method="POST">
+            
+            <div class="row">
+              <div class="large-12 columns">
+                <h4>Danos tu opinión</h4>
+              </div>
+              <div class="large-12 columns">
+                <label>Nombre
+                  <input type="text" name="name" placeholder="Pon aquí tu nombre Ej. Pedro" />
+                </label>
+                <label>Email
+                  <input type="text" name="email" placeholder="Pon aquí tu nombre Ej. tuemail@gmail.com" />
+                </label>
+                <label>Cuentanos tus comentarios
+                  <textarea type="text" name="msg" placeholder="Cuentanos tus comentarios y te ayudaremos a ti." ></textarea>
+                </label>
+
+                <button name="envComentario">Enviar a FFCMéxico</button>
               </div>
             </div>
-            <div class="foo2">
-              <div class="row">
-                <div class="medium-4 columns">
-                  <h4><a href="/">Fenix Fight Club México</a></h4>
-                  <p>Somos un Club de Deportes Úbicado en la Priv. de la 14 Poniente Tehuacán,Pue.</p>
-                  <div class="panel callout radius">
-                    <p>Encuentranos en <a href="http://bit.ly/FFCmaps">Google Maps</a></p>
-                  </div>
-                </div>
-                <div class="medium-4 columns">
-                  <h4><a href="/">Semana Gratis</a></h4>
-                  <p>Ven y obten tu semana gratis, así te ayudamos a escoger el mejor programa para ti</p>
-                  <form action="." method="POST">
-                  {% csrf_token %}
-                  <button>Obten tu Semana Gratis</button>
-                  </form>
-                </div>
-                <div class="medium-4 columns">
-                  <h4><a href="/">Dudas o Comentarios</a></h4>
-                  <p>Tienes alguna duda o comentario o sugerencia haznola saber, te responderemos lo más pronto posible.</p>
-                  <a href="#" data-options="align:top" data-dropdown="drop2" class="button small">Ayudanos a mejorar con tu sugerencia</a>
-                  <div id="drop2" data-dropdown-content class="f-dropdown large content">
-                    <form action="." method="POST">
-                      {% csrf_token %}
-                      <div class="row">
-                        <div class="large-12 columns">
-                          <h4>Danos tu opinión</h4>
-                        </div>
-                        <div class="large-12 columns">
-                          <label>Nombre
-                            <input type="text" name="name" placeholder="Pon aquí tu nombre Ej. Pedro" />
-                          </label>
-                          <label>Email
-                            <input type="text" name="email" placeholder="Pon aquí tu nombre Ej. tuemail@gmail.com" />
-                          </label>
-                          <label>Cuentanos tus comentarios
-                            <textarea type="text" name="msg" placeholder="Cuentanos tus comentarios y te ayudaremos a ti." ></textarea>
-                          </label>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
 
-                          <button name="envComentario">Enviar a FFCMéxico</button>
-                        </div>
-                      </div>
-                    </form>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div id="sitiomapa">
-              <div class="row">
-              <div class="medium-6 columns">
-                <div class="small-6 columns">
-                  <ul class="side-nav">
-                    <li><h4><a href="/programas">Programas</h4></a></li>
+  <!--SitioMApa -->
+  <div id="sitiomapa">
+    <div class="row">
+      <div class="small-12 columns">
+        <ul class="small-block-grid-1 medium-block-grid-2">
+          <li>
+            <dl class="accordion" data-accordion="myAccordionGroup">
+              <dd>
+                <a href="#panel1" class="text-center">PROGRAMAS</a>
+                <!-- Add Class Active to show it-->
+                <div id="panel1" class="content">
+                  <ul>
                     <li><a href="/programas/kids">Kids</a></li>
                     <li><a href="/programas/box">Box</a></li>
                     <li><a href="/programas/judo">Judo</a></li>
                     <li><a href="/programas/crossfit">Crossfit</a></li>
-                    <li><a href="/programas/crossfit">Sumision</a></li>
+                    <li><a href="/programas/sumision">Sumision</a></li>
                     <li><a href="/programas/jiujitsu">Jiu Jitsu Brasileño</a></li>
                     <li><a href="/programas/artesmarcialesmixtas">Artes Marciales Mixtas</a></li>
                   </ul>
                 </div>
-                <div class="small-6 columns">
-                  <ul class="side-nav">
-                    <li><h4><a href="/">Home</h4></a></li>
+              </dd>
+              <dd>
+                <a href="#panel2" class="text-center">HOME</a>
+                <div id="panel2" class="content">
+                  <ul>
+                    <li><a href="/">Home</a></li>
                     <li><a href="/contacto">Contacto</a></li>
+                    <li><a href="/mapa">Mapa</a></li>
                     <li><a href="/faqs">FAQs</a></li>
                     <li><a href="/about">About</a></li>
                     <li><a href="/horario">Horario</a></li>
                     <li><a href="/codigo">Código</a></li>
-                     
-                  </ul>
-                </div>
-              </div>
-              <div class="medium-6 columns">
-
-                <div class="small-6 columns">
-                  
-                  <ul class="side-nav">
-                    <li><h4><a href="/instructores">Instructores</h4></a></li>
-                    <li><a href="/instructores/brian">Brian M. Barbour</a></li>
-                    <li><a href="/instructores/pako">Pako</a></li>
-                    <li><a href="/instructores/edu">Edu</a></li>
-
-                  </ul>
-                </div>
-                <div class="small-6 columns">
-                  <ul class="side-nav">
-                    <li><h4><a href="/servicios">Servicios</h4></a></li>
-                    <li><a href="/servicios/masaje">Masaje</a></li>
-                    <li><a href="/servicios/fisioterapia">Fisioterapia</a></li>
+                    <li><a href="/galeria">Galerias</a></li>
                     <li><a href="/freeweek">Semana Gratis</a></li>
                   </ul>
-                </div>            
-              </div>
-              
-            </div>
-            </div>
-            
-            <div id="foo3">
-              <div class="row">
-                <div class="large-12 columns">
-                  <p>© Fenix Fight Club México 2014, Todos los derechos Reservados.</p>
-                  <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Licencia Creative Commons" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a><br />Esta obra está bajo una <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Licencia Creative Commons Atribución-NoComercial-CompartirIgual 4.0 Internacional</a>.
-
                 </div>
-              </div>
-            </div>
-          </footer>
+              </dd>
+            </dl>
+          </li>
+          <li>
+            <dl class="accordion" data-accordion="myAccordionGroup">
+              <dd>
+                <a href="#panel3" class="text-center">INSTRUCTORES</a>
+                <div id="panel3" class="content">
+                  <ul>
+                    <li><a href="/instructores/brian">Brian</a></li>
+                    <li><a href="/instructores/pako">Pako</a></li>
+                    <li><a href="/instructores/edu">Edu</a></li>
+                  </ul>
+                </div>
+              </dd>
+              <dd>
+                <a href="#panel4" class="text-center">SERVICIOS</a>
+                <div id="panel4" class="content">
+                  <ul>
+                    <li><a href="/servicios/masaje">Masaje</a></li>
+                    <li><a href="/servicios/fisioterapia">Fisioterapia</a></li>
+                    <li><a href="/freeweek">Nutrición</a></li>
+                  </ul>
+                </div>
+              </dd>
+            </dl>
+          </li>
+        </ul>
 
-        </section>
-        <a class="exit-off-canvas hide-for-large-up"></a>
+      </div><!--End end columns -->
+    </div><!--End Row -->
+  </div><!--End SitioMApa -->
+  
+  <div id="foo3">
+    <div class="row">
+      <div id="foo_logo" class="large-12 columns text-center">
+        <a href="/" class="text-center logo_menu"><img width="98" height="70" src="{{STATIC_URL}}img/base/logo-menu.png" alt="Logo Oficial de FFCMéxico Tehuacán" class="rotarY"></a>
+        <h5 class="text-center fenix-foo"><strong>FFC</strong>México</h5>
+        <p>© Fenix Fight Club México 2014, Todos los derechos Reservados.</p>
+        <a href="/privacidad/terminosycondiciones">Terminos y Condiciones</a>
       </div>
     </div>
-    
-    <script src="{{STATIC_URL}}js/vendor/jquery.js"></script>
-    <script src="{{STATIC_URL}}js/vendor/fastclick.js"></script>
-    <script src="{{STATIC_URL}}js/foundation.min.js"></script>
-    <script src="{{STATIC_URL}}js/vendor/jquery.cookie.js"></script>
-    
-    {%block afterfoundationjs%}{%endblock afterfoundationjs%}
-    <script>
-      $(document).foundation();
-    </script>
-    <script src="{{STATIC_URL}}js/main.js"></script>
-    {%block aftermainjs%}{%endblock aftermainjs%}
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  </div><!--End Foo3 -->
+  <div id="kumma-foo">
+  </div>
+</footer>
+{%endblock%}
 
-      ga('create', 'UA-48031408-1', 'ffcmexico.com');
-      ga('require', 'displayfeatures');
-      ga('require', 'linkid', 'linkid.js');
-      ga('send', 'pageview');
-    </script>
-</body>
-</html>

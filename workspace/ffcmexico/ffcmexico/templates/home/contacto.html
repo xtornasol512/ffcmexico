@@ -17,6 +17,37 @@
             </div>
         </div>
     </section>
+    <section class="afterHero">
+        <div class="row">
+
+            <div class="small-12 columns">
+                <h4>Mantente en contacto con nosotros, y si tienes algunda duda, pregunta o comentario haznosla saber</h4>
+                <form action="{{STATIC_URL}}scphp/mail.php" method="POST">
+                    <fieldset>
+                        <legend>Contactanos</legend>
+                        <div class="row">
+                          <div class="large-12 columns">
+                            <h4>Danos tu opinión</h4>
+                        </div>
+                        <div class="large-12 columns">
+                            <label>Nombre
+                              <input type="text" name="name" placeholder="Pon aquí tu nombre Ej. Pedro" />
+                          </label>
+                          <label>Email
+                              <input type="text" name="email" placeholder="Pon aquí tu nombre Ej. tuemail@gmail.com" />
+                          </label>
+                          <label>Cuentanos tus comentarios
+                              <textarea type="text" name="msg" placeholder="Cuentanos tus comentarios y te ayudaremos a ti." ></textarea>
+                          </label>
+
+                          <button name="envComentario">Enviar a FFCMéxico</button>
+                      </div>
+                  </div>
+              </fieldset>
+          </form>
+      </div>
+    </div>
+    </section>
 {% endblock %}
 {%block afterfoundationjs%}{%endblock%}
 {%block morejs%}{%endblock%}

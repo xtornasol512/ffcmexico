@@ -31,6 +31,7 @@ urlpatterns=patterns('ffcmexico.home.views',
     url(r'^box$', 'boxRedirect'),
     url(r'^boxing$', 'boxRedirect'),
     url(r'^kids$', 'kidsRedirect'),
+    url(r'^ninos$', 'kidsRedirect'),
     #Instructores
     url(r'^instructores/$', 'instructores'),
     url(r'^instructores/brian$', 'brian'),
@@ -53,22 +54,32 @@ urlpatterns=patterns('ffcmexico.home.views',
     url(r'^fisioterapeuta$', 'terapiaRedirect'),
     url(r'^terapeuta$', 'terapiaRedirect'),
     url(r'^masaje$', 'masajeRedirect'),
+    url(r'^estrellita$', 'masajeRedirect'),
     url(r'^nutricion$', 'nutricionRedirect'),
     #Galerias
+    url(r'^galeria$', 'galeria'),
     url(r'^galeria/fotos$', 'fotos'),
     url(r'^galeria/videos$', 'videos'),
     #redirects Galerias
+    url(r'^galerias$', 'galeriaRedirect'),
     url(r'^videos$', 'videosRedirect'),
     url(r'^fotos$', 'fotosRedirect'),
-    #Paginas Basicas
+    #Paginas Privacidad
+    url(r'^privacidad/terminosycondiciones$', 'terminos'),
+    #Redirects Privacidad
+    url(r'^privacidad$', 'terminosRedirect'),
+    url(r'^terminos$', 'terminosRedirect'),
+    url(r'^condiciones$', 'terminosRedirect'),
+    #Paginas HOME
     url(r'^about$', 'nosotros'),
     url(r'^horario$', 'horario'),
     url(r'^contacto$', 'contacto'),
-    
     url(r'^codigo$', 'codigoconducta'),
     url(r'^freeweek$', 'freeweek'),
+    url(r'^semanagratis$', 'freeweek'),
     url(r'^mapa$', 'maps'),
     url(r'^faqs$', 'faqs'),
+    url(r'^sink$', 'sink'),
 
 
     #Enlaces Externos

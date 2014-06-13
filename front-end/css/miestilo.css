@@ -1,21 +1,98 @@
+@import url("http://fonts.googleapis.com/css?family=Lato:300,400,700");
+body{
+    font-family: "Lato", "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight:300;
+}
+h1, h2, h3, h4, h5, p{
+    font-family: "Lato", "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight:300;
+}
+#logo-menu .panel{
+    margin-bottom: 0;
+    padding-top: 6px;
+}
+
+#logo-menu .panel .logo_menu{
+    background: #f2f2f2;
+    border-bottom: 0px; 
+}
+#logo-menu .panel .logo_menu img{
+    text-shadow: 0px 0px 64px 8px rgba(0,0,0,0.75);
+}
+#logo-menu .panel .logo_menu:hover{
+    background: #f2f2f2;
+    
+}
+#panel1 ul, #panel2 ul, #panel3 ul, #panel4 ul{
+    list-style: none;
+}
+#menuMovil li a i{
+    margin-right: 7px;
+}
+#foo_logo > p{
+    line-height: 1;
+    margin-bottom: 0.2rem;
+}
+.fenix-foo:hover{
+    color:#1F6D8C;
+}
+#newsletter{
+    padding-top: 2em;
+}
+#sitiomapa{
+    padding-top: 2em;
+}
+#foo3{
+
+    padding-top: 2em;
+}
+#kumma-foo{
+    background: #fff url(/static/img/base/kumma-foo.jpg) no-repeat 50% 0%;
+    background-size: cover;
+    height: 670px;
+    padding: 0;
+}
+
+.fenix-foo{
+    color:#9d9d9d;
+    font-weight: 900;
+    font-style: italic;
+    line-height: 1;
+    animation: all 1s ease;
+}
+.icon-large{
+    font-size: 1.3em;
+    margin-right: 5px;
+}
+.panel h5, .fenix{
+    color: #1F6D8C;
+    font-style: italic;
+}
+
+
 .hero{
     padding-top: 6em;
     padding-bottom: 7em;
 }
-
-.bg-home{
-    
+.afterHero{
+    padding-top: 2em;
+}
+#fb-like-box, .fb-like-box, .fb-like-box iframe[style], .fb-like-box span {
+width: 100% !important;
+}
+.indent{
+    text-indent: 2em;
 }
 .bg-contacto{
     background: url(/static/img/bgs/bg-contacto.jpg) 0 0 no-repeat;
     background-size: cover;
 }
 .bg-horario{
-    background: url(/static/img/bgs/bg-horario.jpg) 0 0 no-repeat;
+    background: url(/static/img/bgs/bg-horario.jpg) 50% 0% no-repeat;
     background-size: cover;
 }
 .bg-codigo{
-    background: url(/static/img/bgs/bg-codigo.jpg) 0 0 no-repeat;
+    background: url(/static/img/bgs/bg-codigo.jpg) no-repeat 50% 0%;
     background-size: cover;
 }
 .bg-faqs{
@@ -34,15 +111,10 @@
     background: url(/static/img/bgs/bg-videos.jpg) 0 0 no-repeat;
     background-size: cover;
 }
+.bg-newsletter{
 
-@media only screen and (min-width: 641px){
-  .dropdown-wrapper
-  {
-    background-color: #666 !important;
-    width: 540px !important;
-    padding: 10px 0;
-  }
 }
+
 .text-align-center{
     text-align: center;
 }
@@ -56,36 +128,17 @@
 .alert-box{
     margin-bottom: 0px;
 }
-/* Small screens*/
-@media only screen { } /* Define mobile styles */
+.rotarY{
+    transform:rotateY(0deg);
+   transition-duration: 1.5s;
 
-@media only screen and (max-width: 40em) { } /* max-width 640px, mobile-only styles, use when QAing mobile issues */
+}
+.rotarY:hover{
+   
+   transform:rotateY(360deg);
+   transition-duration: 1.5s;
 
-/* Medium screens*/
-@media only screen and (min-width: 40.063em) { 
-    .orbit-container .orbit-slides-container li .orbit-caption {
-        bottom: 25%;
-        background-color: rgba(51, 51, 51, 0.2);
-        color: white;
-        width: 100%;
-        padding: 0.625rem 0.875rem;
-        font-size: 2em; }
+}
+@media only screen {
     
-} /* min-width 641px, medium screens */
-
-@media only screen and (min-width: 40.063em) and (max-width: 64em) {
-    
- } /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
-
-/*// Large screens*/
-@media only screen and (min-width: 64.063em) { } /* min-width 1025px, large screens */
-
-@media only screen and (min-width: 64.063em) and (max-width: 90em) { } /* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
-
-/*// XLarge screens*/
-@media only screen and (min-width: 90.063em) { } /* min-width 1441px, xlarge screens */
-
-@media only screen and (min-width: 90.063em) and (max-width: 120em) { } /* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
-
-/*// XXLarge screens*/
-@media only screen and (min-width: 120.063em) { } /* min-width 1921px, xlarge screens */
+}
