@@ -9,12 +9,116 @@
 {%block morecss%}{%endblock%}
 <!-- body-->
 {% block contenido %}
-    <div class="row">
-        <div class="small-12 medium-10 columns">
-            <h1>Programas</h1>
-            <h2>Programas Junio 2014 </h2>
+    <section class="hero bg-codigo">
+        <div class="row">
+            <div class="medium-10 small-centered columns heading text-center">
+                <h1 class="animated fadeInUp">Programas</h1>
+                
+            </div>
         </div>
-    </div>
+    </section>
+    <section id="programas" class="afterHero">
+    <div class="row">
+      <div class="small-12 columns">
+        <h3 class="text-center">PROGRAMAS</h3>
+        <p class="text-center"><strong>Ofrecemos entrenamiento para Artes Marciales Mixtas (MMA). Jiu Jitsu Brasileño (BJJ), Box, Judo, Gimnasia para niños y más</strong></p>
+        <br />
+        <div class="row"> <!-- BeginKids -->
+          <div class="medium-4 columns">
+          <a href="{{STATIC_URL}}img/disciplinas/kids/kids_01.jpg">
+            <img class="th radius" src="{{STATIC_URL}}img/disciplinas/kids/th/kids_01.jpg" alt="Programa Disciplina Kids">
+          </a>
+          </div>
+          <div class="medium-8 columns">
+            <h4><a href="/kids">Kids</a></h4>
+            <p>El Jiu-jitsu Brasileño proporcionará una divertida y exigente sesión de ejercicios cardiovasculares para su hijo y le encantara hacerlo. La parte más difícil para mantener en forma a los niños hoy en día es alejarlos de la computadora o de los videojuegos.</p>
+            <p class="text-right"><a href="/kids">Saber más</a></p>
+            
+          </div>
+        </div> <!-- EndKids -->
+        <br />
+        <div class="row"> <!-- Begin Judo -->
+          <div class="medium-4 columns">
+            <a href="{{STATIC_URL}}img/disciplinas/judo/judo_01.jpg">
+            <img class="th radius" src="{{STATIC_URL}}img/disciplinas/judo/th/judo_01.jpg" alt="Programa Disciplina Judo">
+          </a>
+          </div>
+          <div class="medium-8 columns">
+            <h4><a href="/judo">Judo</a></h4>
+            <p>El Judo es un arte marcial y deporte de combate de origen japonés. Actualmente en su forma deportiva se especializa en los lanzamientos, las sumisiones y las estrangulaciones.</p>
+            <p class="text-right"><a href="/judo">Saber más</a></p>
+            
+          </div>
+        </div> <!-- End Judo -->
+        <br />
+        <div class="row"> <!-- Begin sumision -->
+          <div class="medium-4 columns">
+            <a href="{{STATIC_URL}}img/disciplinas/sumision/sumision_01.jpg">
+            <img class="th radius" src="{{STATIC_URL}}img/disciplinas/sumision/th/sumision_01.jpg" alt="Programa Disciplina sumision"></a>
+          </div>
+          <div class="medium-8 columns">
+            <h4><a href="/sumision">Sumisión</a></h4>
+            <p>Submission Grappling se refiere a todos aquellos sistemas de lucha cuerpo a cuerpo que no involucran golpes para vencer al rival, sino que se utilizan técnicas de derribo, de posición o sumisión para conseguir puntos o forzar su rendición.</p>
+            <p class="text-right"><a href="/sumision">Saber más</a></p>
+            
+          </div>
+        </div> <!-- End sumision -->
+        <br />
+        <div class="row"> <!-- Begin bjj -->
+          <div class="medium-4 columns">
+            <a href="{{STATIC_URL}}img/disciplinas/bjj/bjj_07.jpg">
+            <img class="th radius" src="{{STATIC_URL}}img/disciplinas/bjj/th/bjj_07.jpg" alt="Programa Disciplina bjj"></a>
+          </div>
+          <div class="medium-8 columns">
+            <h4><a href="/bjj">Jiu Jitsu Brasileño (BJJ)</a></h4>
+            <p>El jiu-jitsu brasileño es un arte marcial, deporte de combate y sistema de defensa personal, enfocado principalmente en la lucha cuerpo a cuerpo y en el suelo. Sus técnicas incluyen: lanzamientos, derribos, luxaciones articulares, estrangulaciones, y sumisiones.</p>
+            <p class="text-right"><a href="/bjj">Saber más</a></p>
+            
+          </div>
+        </div> <!-- End bjj -->
+        <br />
+         <div class="row"> <!-- Begin Box -->
+          <div class="medium-4 columns">
+            <a href="{{STATIC_URL}}img/disciplinas/box/box_01.jpg">
+            <img class="th radius" src="{{STATIC_URL}}img/disciplinas/box/th/box_01.jpg" alt="Programa Disciplina Box"></a>
+          </div>
+          <div class="medium-8 columns">
+            <h4><a href="/Box">Box</a></h4>
+            <p>Deporte de combate en el que dos contrincantes luchan utilizando únicamente sus puños con guantes, golpeando a su adversario de la cintura hacia arriba, en breves secuencias de lucha denominadas asaltos o rounds y de acuerdo a un preciso reglamento, el cual regula categorías de pesos y duración del encuentro.</p>
+            <p class="text-right"><a href="/Box">Saber más</a></p>
+            
+          </div>
+        </div> <!-- End Box -->
+        <br />
+        <div class="row"> <!-- Begin Crossfit -->
+          <div class="medium-4 columns">
+            <a href="{{STATIC_URL}}img/disciplinas/crossfit/crossfit_01.jpg">
+            <img class="th radius" src="{{STATIC_URL}}img/disciplinas/crossfit/th/crossfit_01.jpg" alt="Programa Disciplina Crossfit"></a>
+          </div>
+          <div class="medium-8 columns">
+            <h4><a href="/crossfit">Crossfit</a></h4>
+            <p>CrossFit es un programa de fuerza y acondicionamiento físico con el objetivo de mejorar entre otras cosas, fuerza muscular, resistencia cardio-respiratoria, y flexibilidad. Propone una mezcla cambiante de ejercicios aerobicos, gimnasia (ejercicios con peso propio), y Levantamiento de Pesos Olimpicos.</p>
+            <p class="text-right"><a href="/crossfit">Saber más</a></p>
+            
+          </div>
+        </div> <!-- End Crossfit -->
+        <br />
+        <div class="row"> <!-- Begin mma -->
+          <div class="medium-4 columns">
+            <a href="{{STATIC_URL}}img/disciplinas/kids/kids_mma_01.jpg">
+            <img class="th radius" src="{{STATIC_URL}}img/disciplinas/kids/th/kids_mma_01.jpg" alt="Programa Disciplina mma"></a>
+          </div>
+          <div class="medium-8 columns">
+            <h4><a href="/mma">Artes Marciales Mixtas</a></h4>
+            <p>Las Artes Marciales Mixtas es un estilo de pelea que incorpora tanto golpes como tecnicas de lucha en pie y en el suelo, las artes marciales mixtas pueden ser practicadas en un torneo en el cual dos competidores intentan vencer cada uno a su oponente usando un amplio rango de tecnicas permitidas.</p>
+            <p class="text-right"><a href="/mma">Saber más</a></p>
+
+          </div>
+        </div> <!-- End mma -->
+
+      </div> <!-- End Columns -->
+    </div> <!-- End Row -->
+  </section>
 {% endblock %}
 {%block afterfoundationjs%}{%endblock%}
 {%block morejs%}{%endblock%}

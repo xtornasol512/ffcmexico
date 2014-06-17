@@ -9,27 +9,43 @@
 {%block morecss%}{%endblock%}
 <!-- body-->
 {% block contenido %}
+<section id="SlideHero" class="heroHOME">
+        <ul class="example-orbit" data-orbit data-options="animation_speed:1500;slide_number: false;bullets: false; timer: true">
+          <li >
+            <img src="{{STATIC_URL}}img/home/home_01.jpg" alt="slide 1" />
+            
+            <div class="orbit-caption show-for-large-up">
+              Bienvenido a Fenix Fight Club México
+              <a href="/servicios" class="button medium ">Servicios</a>
+              
+            </div>
+          </li>
+          <li >
+            <img src="{{STATIC_URL}}img/home/home_02.jpg" alt="slide 2" />
+            <div class="orbit-caption show-for-large-up">
+              Aprende con profesionales, Defensa Personal, Jiu Jitsu , Judo, Artes Marciales Mixtas y más.
+              <a href="/programas" class="button medium">Programas</a>
+            </div>
+          </li>
+          <li>
+            <img src="{{STATIC_URL}}img/home/home_03.jpg" alt="slide 3" />
+            <div class="orbit-caption show-for-large-up">
+              Recuerda obtener tu Semana Gratis.
+              <a href="/freeweek" class="button medium">!!Obten ya tu Semana Gratis!!</a>
+            </div>
+          </li>
+        </ul>
+  </section>
+<section class="afterHero">
     <div class="row">
-        <div class="small-12 medium-10 columns">
-            <h1>Galeria de Fotos</h1>
-            <h2>Ven y disfruta de nuestras instalaciones</h2>
+        <div class="small-12 text-center">
+            <h3>Conoce nuestras galerias de Fotos, también unetenos a hacer más grande nuestra galeria, mandanos tus fotos a @ffcmexico o a brian@ffcmexico.com </h3>
+            <h3>Otra manera es publicando en instagram con el hastag #FFCMexico</h3>
         </div>
     </div>
-    <section>
-        <div class="row">
-            <div class="small-12 columns">
-                <span class='st_facebook_large' displayText='Facebook'></span>
-                <span class='st_twitter_large' displayText='Tweet'></span>
-                <span class='st_googleplus_large' displayText='Google +'></span>
-                <span class='st_email_large' displayText='Email'></span>
-                <span class='st_sharethis_large' displayText='ShareThis'></span>
-            </div>
-        </div>
-    </section>
+
+</section>
 {% endblock %}
 {%block afterfoundationjs%}{%endblock%}
 {%block morejs%}
-<script type="text/javascript">var switchTo5x=true;</script>
-<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
-<script type="text/javascript">stLight.options({publisher: "07b2284e-9a4b-4c7d-9053-1a7727b37b44", doNotHash: false, doNotCopy: false, hashAddressBar: true});</script>
 {%endblock%}

@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 <!-- Head-->
 {% block title %}{% block og_title %}Galeria de Vídeos{% endblock %}{% endblock %}
-{%block rel_canonical%}http://ffcmexico.com/galeria/fotos{%endblock%}
+{%block rel_canonical%}http://ffcmexico.com/galeria/videos{%endblock%}
 {%block og_type%}{%endblock%}
 {% block descripcion %}{% block og_descripcion %}Ve nuestras galerias de Vídeos y Asiste a tu Semana Gratis. {% endblock %} {% endblock %}
 {% block keywords %}Galeria, Vídeos, gym, entrenamiento, ejercicio, club, instructores, servicios{% endblock %}
@@ -9,12 +9,49 @@
 {%block morecss%}{%endblock%}
 <!-- body-->
 {% block contenido %}
+<section id="videoHD" class="flex-video">
+    <iframe width="720" height="480" src="//www.youtube.com/embed/xwN_lkESypE?list=PL8gi4q4zMik-NjD9gZDQVNWa3VJim5wrp&theme=light&color=white&autoplay=1&loop=1&rel=0&" frameborder="0" allowfullscreen></iframe>
+</section>
+<section class="afterHero">
     <div class="row">
-        <div class="small-12 medium-10 columns">
-            <h1>Galeria de Vídeos</h1>
-            <h2>Ven y disfruta de nuestras instalaciones</h2>
+        <div class="small-12 columns">
+            <h3>Para disfrutar de todos nuestros vídeos inscribete a nuestro Canal de Youtube</h3>
+            <div class="row">
+              <div class="medium-11 small-centered columns">
+                <a href="#" data-options="align:top" data-dropdown="dropSocial" class="button small expand">Más de Redes Sociales</a>
+                <div id="dropSocial" data-dropdown-content class="f-dropdown large content">
+                  <script src="https://apis.google.com/js/platform.js"></script>
+                    <div class="row">
+                      <div class="small-12 columns">
+                        <a href="https://twitter.com/ffcmexico" class="twitter-follow-button " data-show-count="true" data-dnt="true">Follow @ffcmexico</a>
+                        <p>Suscribete al Canal de Youtube:</p>
+                          <div class="g-ytsubscribe" data-channel="strmrzl" data-layout="default" data-count="default"></div>
+                          <br />
+                          <!-- Place this tag where you want the +1 button to render. -->
+                          <div class="g-plusone"></div>
+
+                          <!-- Place this tag after the last +1 button tag. -->
+                          <script type="text/javascript">
+                            window.___gcfg = {lang: 'es-419'};
+
+                            (function() {
+                              var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+                              po.src = 'https://apis.google.com/js/platform.js';
+                              var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+                            })();
+                          </script>
+                          <p>¡Siguenos en Facebook!</p>
+                          <div class="fb-like" data-href="https://www.facebook.com/pages/Fenix-Fight-Club-Mexico/215447585145328?fref=ts" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+                          </div>
+                    </div>
+                    
+                </div>
+              </div>
+            </div>
+            <h3>También puedes ver los vídeos de nuestro <strong><a href="https://www.youtube.com/user/strmrzl">Canal Fenix Fight Club México</a></strong> directamente en youtube</h3>
         </div>
-    </div>
+    </div>    
+</section>
 {% endblock %}
 {%block afterfoundationjs%}{%endblock%}
 {%block morejs%}{%endblock%}

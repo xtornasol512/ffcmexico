@@ -1,15 +1,39 @@
-{% extends 'base.html' %}
-<!-- Head-->
-{% block title %}{% block og_title %}Fenix Fight Club Mexico{% endblock %}{% endblock %}
-{%block rel_canonical%}http://ffcmexico.com{%endblock%}
-{%block og_type%}{%endblock%}
-{% block descripcion %}{% block og_descripcion %}Curso de Diseño y desarrollo Web, Aprende a crear tu entorno de trabajo como un experto. {% endblock %} {% endblock %}
-{% block keywords %}Diseño Web, Desarrollo Web, Workflow, Tehuacan, Puebla, Cursos{% endblock %}
-{% block og_img %} {% endblock %}
+{% extends "base.html" %}
+{% block title %}{% block og_title %}Nutrición{% endblock %}{% endblock %}
+{%block rel_canonical%}http://ffcmexico.com/servicios/nutricion{%endblock%}
+{% block descripcion %}{% block og_descripcion %}Contamos con una excelente Licenciada en Nutricion y Ciencia de los Alimentos{% endblock %} {% endblock %}
+{% block keywords %}Nutricion, Alimentos sanos, Bajar de peso, Perdida de peso, Deportes, Dieta, Tehuacan{% endblock %}
+{% block og_img %}{% endblock %}
 {%block morecss%}{%endblock%}
 <!-- body-->
 {% block contenido %}
-<div class="fb-comments" data-href="http://ffcmexico.com/" data-numposts="1" data-colorscheme="light"></div> 
+<section class="ProfileHero bg-faqs">
+        <div class="row">
+            <div class="medium-10 small-centered columns heading text-align-center">
+                <h1 class="animated fadeInUp">LNCA. Maria Oliva Rodriguez Ortega</h1>
+                <p>Nutriologa</p>
+                <img class="th perfil" width="200" src="{{STATIC_URL}}img/servicios/nutricion/nutricion_02.jpg" alt="Maria Oliva Nutriologa en Fenix Fight CLub">
+
+            </div>
+        </div>
+</section>
+<section class="afterProfileHero">
+    <div class="row">
+        <div class="small-12 columns text-center">
+            <h3>LNCA. Maria Oliva Rodriguez Ortega</h3>
+            <p>Nutriologa</p>
+            <h3>Ha trabajado con varios deportistas en su carrera como Nutriologa entre los que se destacan:</h3>
+            <ul class="no-bullet">
+                <li>Equipo Profesional de Futbol Puebla A.C.</li>
+                <li>Peleadores de Jiu jitsu Brasileño en Torneos Nacionales.</li>
+                <li>Peleadores Profesionales de Artes Marciales Mixtas y Boxeo.</li>
+            </ul>
+            <h3>Entre sus especialidades destacan la <strong>Nutricion Integral</strong>, <strong>Nutricion Deportiva</strong>, <strong>Perdida de Peso</strong>, <strong>Evaluacion del Estado Nutricional y la Suplementacion</strong>. </h3>
+            <h3>Cuenta con el <strong>Certificado ISAK </strong>(cineartropometria) </h3>
+
+        </div>
+    </div>
+</section>
 {% endblock %}
 {%block afterfoundationjs%}{%endblock%}
 {%block morejs%}{%endblock%}

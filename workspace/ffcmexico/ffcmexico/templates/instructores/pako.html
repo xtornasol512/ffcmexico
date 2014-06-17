@@ -1,1 +1,39 @@
 {% extends "base.html" %}
+{% block title %}{% block og_title %}Pako{% endblock %}{% endblock %}
+{%block rel_canonical%}http://ffcmexico.com/instructores/pako{%endblock%}
+{% block descripcion %}{% block og_descripcion %}Asistente de entrenador de MMA, Entrenamiento mental, Desarrollo de pateo para Artes Marciales Mixtas, Tercer Dan de Tae Kwon Do{% endblock %} {% endblock %}
+{% block keywords %}Cursos de Box, Acondicionamiento Fisico, Sparring, Asistente de entrenador de MMA{% endblock %}
+{% block og_img %}{% endblock %}
+{%block morecss%}{%endblock%}
+{% block contenido %}
+<section class="ProfileHero bg-brian">
+        <div class="row">
+            <div class="medium-10 small-centered columns heading text-align-center">
+                <h1 class="animated fadeInUp">Francisco “Pako” Javier Ramos Temaxte</h1>
+                <p>Instructor de Box y Acondicionador Fisico</p>
+                <img class="th perfil" width="200" src="{{STATIC_URL}}img/instructores/pako/pako_01.jpg" alt="Edu Maestro e Instructor en Fenix Fight CLub">
+
+            </div>
+        </div>
+</section>
+<section class="afterProfileHero">
+    <div class="row">
+        <div class="small-12 columns">
+            <h3 class="text-center">Francisco “Pako” Ramos Temaxte</h3>
+            <h3 class="text-center">Instructor en Fenix Fight Club Mexico da Cursos de Box, Acondicionamiento Fisico, Sparring, Asistente de entrenador de MMA, Artes Marciales Mixtas en Tehuacán, Puebla</h3>
+            <p>Contenido de Biografia</p>
+            <ol>
+                <li>Entrenador de Box Profesional Olimpico</li>
+                <li>Campeon Nacional 2009</li>
+                <li>Campeon Estatal 2009</li>
+                <li>Campeon de los Guantes de Oro Puebla 2006</li>
+                <li>Campeon de los Guantes de Oro Puebla 2007</li>
+                <li>Campeon de los Guantes de Oro Puebla 2008</li>
+                <li>Sub Campeon de los Guantes de Oro D.F. 2009</li>
+                <li>Seleccionado Nacional 2009 CDOM</li>
+                <li>Comite Olimpico Mexicano</li>
+            </ol>
+        </div>
+    </div>
+</section>
+{% endblock %}
