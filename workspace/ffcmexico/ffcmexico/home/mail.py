@@ -9,7 +9,7 @@ def mailing(request, diccionario):
     respuesta  = ''
     asunto     = ''
     asunto_res = ''
-    plantilla = True
+    plantilla = False
     if   'envComentario'   in request.POST:
 
         email  = request.POST.get('email','')
@@ -101,8 +101,7 @@ def mailing(request, diccionario):
             respuesta = "%s<a href=\"http://ffcmexico.com/\"><span></span>FFCMexico</a>"%(respuesta)
  
     if enviar:
-        para   = ['email@email.com'
-                    ]
+        para   = ['phyrox.vash512@gmail.com',]
         try:
             for name in para:
                 #BRIAN
@@ -120,4 +119,5 @@ def mailing(request, diccionario):
                 pass
         except:
             diccionario.update({'noenviado':True})
+    #x=0/0
     return diccionario

@@ -10,10 +10,12 @@
         <form action="{{STATIC_URL}}scphp/mail.php" method="POST">
           <div class="row collapse">
             <div class="small-9 columns">
-              <input type="text" placeholder="Tu email Ej. mi@email.com">
+              <input type="text" name="email" placeholder="Tu email Ej. mi@email.com">
             </div>
             <div class="small-3 columns">
+
               <button name="envSuscripcion" class="button postfix"><i class="fi-mail icon-large"></i>SUSCRÍBETE</button>
+
             </div>
           </div>
         </form>
@@ -50,6 +52,7 @@
               <div class="large-12 columns">
                 <h4>Danos tu opinión</h4>
               </div>
+
               <div class="large-12 columns">
                 <label>Nombre
                   <input type="text" name="name" placeholder="Pon aquí tu nombre Ej. Pedro" />
