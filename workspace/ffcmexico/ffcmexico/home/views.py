@@ -25,18 +25,18 @@ def index_view(request):
 #Privacidad
 def terminos(request):
     return render_to_response('privacidad/terminos_privacidad.html',
-                          my_data,
+                          my_data_dict,
                           context_instance=RequestContext(request))
 
 #Paginas Base
 def contacto(request):
     return render_to_response('home/contacto.html',
-                          my_data,
+                          my_data_dict,
                           context_instance=RequestContext(request))
 
 def sink(request):
     return render_to_response('blocks/sink.html',
-                          my_data,
+                          my_data_dict,
                           context_instance=RequestContext(request))
 def horario(request):
     return render_to_response('home/horario.html',

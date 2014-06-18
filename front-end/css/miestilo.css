@@ -7,11 +7,19 @@ h1, h2, h3, h4, h5, p{
     font-family: "Lato", "Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight:300;
 }
+#videoHD{
+    height: 480px;
+}
+#SlideHero div ul li .orbit-caption{
+    font-size: 2.5em;
+}
 #logo-menu .panel{
     margin-bottom: 0;
     padding-top: 6px;
 }
-
+.th.perfil {
+border-radius: 50%;
+}
 #logo-menu .panel .logo_menu{
     background: #f2f2f2;
     border-bottom: 0px; 
@@ -37,7 +45,7 @@ h1, h2, h3, h4, h5, p{
     color:#1F6D8C;
 }
 #newsletter{
-    padding-top: 2em;
+    padding-top: 4em;
 }
 #sitiomapa{
     padding-top: 2em;
@@ -60,9 +68,15 @@ h1, h2, h3, h4, h5, p{
     line-height: 1;
     animation: all 1s ease;
 }
+.flex-video{
+    margin-bottom:2px;
+}
 .icon-large{
     font-size: 1.3em;
     margin-right: 5px;
+}
+.icon-xlarge{
+   font-size: 4em; 
 }
 .panel h5, .fenix{
     color: #1F6D8C;
@@ -74,21 +88,51 @@ h1, h2, h3, h4, h5, p{
     padding-top: 6em;
     padding-bottom: 7em;
 }
+.ProfileHero{
+    padding-top: 1.5em;
+    padding-bottom: 0;
+    margin-bottom: -5em;
+}
+.afterProfileHero{
+    background-color: white;
+    padding-top: 6em;
+}
 .afterHero{
     padding-top: 2em;
 }
-#fb-like-box, .fb-like-box, .fb-like-box iframe[style], .fb-like-box span {
-width: 100% !important;
-}
+
 .indent{
     text-indent: 2em;
+}
+.break{
+    text-align: justify;
 }
 .bg-contacto{
     background: url(/static/img/bgs/bg-contacto.jpg) 0 0 no-repeat;
     background-size: cover;
 }
+.bg-brian{
+    background: url(/static/img/bgs/bg-brian.jpg) 50% 0% no-repeat;
+    background-size: cover;
+}
+.bg-pako{
+    background: url(/static/img/bgs/bg-horario.jpg) 50% 0% no-repeat;
+    background-size: cover;
+}
 .bg-horario{
     background: url(/static/img/bgs/bg-horario.jpg) 50% 0% no-repeat;
+    background-size: cover;
+}
+.bg-cross{
+    background: url(/static/img/bgs/bg-crossfit.jpg) 50% 0% no-repeat;
+    background-size: cover;
+}
+.bg-sumision{
+    background: url(/static/img/bgs/bg-sumision.jpg) 50% 0% no-repeat;
+    background-size: cover;
+}
+.bg-mma{
+    background: url(/static/img/bgs/bg-mma.jpg) 50% 0% no-repeat;
     background-size: cover;
 }
 .bg-codigo{
@@ -138,6 +182,31 @@ width: 100% !important;
    transform:rotateY(360deg);
    transition-duration: 1.5s;
 
+}
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    -ms-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
 }
 @media only screen {
     

@@ -9,12 +9,51 @@
 {%block morecss%}{%endblock%}
 <!-- body-->
 {% block contenido %}
-    <div class="row">
-        <div class="small-12 medium-10 columns">
-            <h1>Instructores</h1>
-            <h2>Instructores Junio 2014 </h2>
+    <section class="hero bg-horario">
+        <div class="row">
+            <div class="medium-10 small-centered columns heading text-center">
+                <h1 class="animated fadeInUp">Instructores</h1>
+                <h4>Box, Sparring, Judo , BJJ, MMA y más</h4>
+            </div>
         </div>
-    </div>
+    </section>
+    <section class="afterHero">
+        <div class="row">
+            <div class="small-12">
+                <h3 text-center>Conoce a nuestros Maestros</h3>
+                <div class="flex-video">
+                    <iframe width="720" height="480" src="//www.youtube.com/embed/xwN_lkESypE?theme=light&color=white&autoplay=0&loop=1&rel=0" frameborder="0" allowfullscreen></iframe>
+                 </div>
+                
+            </div>
+            
+        </div>
+    </section>
+    <section class="afterHero">
+        <div class="row">
+            <div class="small-12 columns">
+        <h3 class="text-center">INSTRUCTORES</h3>
+        <div class="row">
+          <div class="medium-4 columns text-center">
+            <h3>Conoce a Brian</h3>
+            <img width="325" class="th perfil" src="{{STATIC_URL}}/img/instructores/brian/brian_01.jpg" alt="Instructor Brian M. Barbour">
+            <a class="button small expand" href="/instructores/brian">Conoce más de Brian</a>
+          </div>
+          <div class="medium-4 columns text-center">
+            <h3>Conoce a Pako</h3>
+            <img width="325" class="th perfil" src="{{STATIC_URL}}/img/instructores/pako/pako_01.jpg" alt="Instructor Paco">
+            <a class="button small expand" href="/instructores/pako">Conoce más de Pako</a>
+          </div>
+          <div class="medium-4 columns text-center">
+            <h3>Conoce a Edu</h3>
+            <img width="325" class="th perfil" src="{{STATIC_URL}}/img/instructores/edu/edu_01.jpg" alt="Instructor Edu">
+            <a class="button small expand" href="/instructores/edu">Conoce más de Edu</a>
+          </div>
+        </div>
+
+      </div>
+        </div>
+    </section>
 {% endblock %}
 {%block afterfoundationjs%}{%endblock%}
 {%block morejs%}{%endblock%}

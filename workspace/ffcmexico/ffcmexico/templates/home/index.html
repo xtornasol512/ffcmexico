@@ -7,30 +7,270 @@
 {% block keywords %}Artes Marciales Mixtas, Jiu Jitsu, Box, Judo, Crossfit{% endblock %}
 <!-- body-->
 {% block contenido %}
-<section class="heroHOME">
-        <ul class="example-orbit" data-orbit data-options="animation_speed:1500;slide_number: false;bullets: false; timer: false">
+<section id="SlideHero" class="heroHOME">
+        <ul class="example-orbit" data-orbit data-options="animation_speed:1500;slide_number: false;bullets: false; timer: true">
           <li >
             <img src="{{STATIC_URL}}img/home/home_01.jpg" alt="slide 1" />
-            <div class="orbit-caption">
+            
+            <div class="orbit-caption show-for-large-up">
               Bienvenido a Fenix Fight Club México
               <a href="/servicios" class="button medium ">Servicios</a>
               
             </div>
           </li>
-          <li class="active">
+          <li >
             <img src="{{STATIC_URL}}img/home/home_02.jpg" alt="slide 2" />
-            <div class="orbit-caption">
+            <div class="orbit-caption show-for-large-up">
               Aprende con profesionales, Defensa Personal, Jiu Jitsu , Judo, Artes Marciales Mixtas y más.
               <a href="/programas" class="button medium">Programas</a>
             </div>
           </li>
           <li>
             <img src="{{STATIC_URL}}img/home/home_03.jpg" alt="slide 3" />
-            <div class="orbit-caption">
+            <div class="orbit-caption show-for-large-up">
               Recuerda obtener tu Semana Gratis.
               <a href="/freeweek" class="button medium">!!Obten ya tu Semana Gratis!!</a>
             </div>
           </li>
         </ul>
-  </section> 
+  </section>
+<section id="videoRedes"class="afterHero">
+    <div class="row">
+      <div class="small-12 columns">
+        <h3 class="text-center">Disfruta y Aprende <a data-tooltip data-tooltip data-options="disable_for_touch:true" class="has-tip" title="Control y Autodefensa" href="/bjj">BJJ</a>, <a data-tooltip data-tooltip data-options="disable_for_touch:true" class="has-tip" title="Box para todas las edades" href="/box">Box</a>, <a  data-tooltip data-tooltip data-options="disable_for_touch:true" class="has-tip" title="Entrenamiento Físico y Condición Física" href="/cross">Crossfit</a>, <a  data-tooltip data-tooltip data-options="disable_for_touch:true" class="has-tip" title="Derribes y Defensa Personal" href="/judo">Judo</a>, <a  data-tooltip data-tooltip data-options="disable_for_touch:true" class="has-tip" title="Combinación de Artes Marciales dentro de una Jaula" href="/mma">MMA</a> con <a  data-tooltip data-tooltip data-options="disable_for_touch:true" class="has-tip" title="Club de Deportes" href="/">Fenix Fight Club</a></h3>
+        <br />
+        <div class="row">
+          <div class="large-6 columns">
+            <div class="flex-video">
+                    <iframe width="720" height="480" src="//www.youtube.com/embed/xwN_lkESypE?list=PL8gi4q4zMik-NjD9gZDQVNWa3VJim5wrp&theme=light&color=white&autoplay=0&loop=1&rel=0&" frameborder="0" allowfullscreen></iframe>
+                </div>
+          </div>
+          <div class="large-6 columns">
+            <h4 class="text-center">Únete a nuestras Redes Sociales</h4>
+            <div class="row">
+              <div class="medium-6 small-centered columns text-center">
+                <ul class="inline-list">
+                  <li><a href="https://www.facebook.com/pages/Fenix-Fight-Club-Mexico/215447585145328?fref=ts"><i class="fi-social-facebook icon-xlarge" target="_blank"></i></a></li>
+                  <li><a href="https://twitter.com/ffcmexico" target="_blank"><i class="fi-social-twitter icon-xlarge"></i></a></li>
+                  <li><a href="https://www.youtube.com/user/strmrzl" target="_blank"><i class="fi-social-youtube icon-xlarge"></i></a></li>
+                  <li><a href="https://es.foursquare.com/v/fenix-fight-club-m%C3%A9xico/4faeb42ee4b0085e227a6b34" target="_blank"><i class="fi-social-foursquare icon-xlarge"></i></a></li>
+                  <li><a href="https://plus.google.com/118442524230195370489/about" target="_blank"><i class="fi-social-google-plus icon-xlarge"></i></a></li>
+                </ul>
+              </div>
+
+            </div>
+            <div class="row">
+              <div class="medium-11 small-centered columns">
+                <a href="#" data-options="align:top" data-dropdown="dropSocial" class="button small expand">Más de Redes Sociales</a>
+                <div id="dropSocial" data-dropdown-content class="f-dropdown large content">
+                  <script src="https://apis.google.com/js/platform.js"></script>
+                    <div class="row">
+                      <div class="small-12 columns">
+                        <a href="https://twitter.com/ffcmexico" class="twitter-follow-button " data-show-count="true" data-dnt="true">Follow @ffcmexico</a>
+                        <p>Suscribete al Canal de Youtube:</p>
+                          <div class="g-ytsubscribe" data-channel="strmrzl" data-layout="default" data-count="default"></div>
+                          <br />
+                          <!-- Place this tag where you want the +1 button to render. -->
+                          <div class="g-plusone"></div>
+
+                          <!-- Place this tag after the last +1 button tag. -->
+                          <script type="text/javascript">
+                            window.___gcfg = {lang: 'es-419'};
+
+                            (function() {
+                              var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+                              po.src = 'https://apis.google.com/js/platform.js';
+                              var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+                            })();
+                          </script>
+                          <p>¡Siguenos en Facebook!</p>
+                          <div class="fb-like" data-href="https://www.facebook.com/pages/Fenix-Fight-Club-Mexico/215447585145328?fref=ts" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+                          </div>
+                    </div>
+                    
+                </div>
+              </div>
+            </div>
+            
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+</section>
+  <!-- Videos y redes Sociales-->
+  <section id="programas" class="afterHero">
+    <div class="row">
+      <div class="small-12 columns">
+        <h3 class="text-center">PROGRAMAS</h3>
+        <p class="text-center"><strong>Ofrecemos entrenamiento para Artes Marciales Mixtas (MMA). Jiu Jitsu Brasileño (BJJ), Box, Judo, Gimnasia para niños y más</strong></p>
+        <br />
+        <div class="row"> <!-- BeginKids -->
+          <div class="medium-4 columns">
+          <a href="{{STATIC_URL}}img/disciplinas/kids/kids_01.jpg">
+            <img class="th radius" src="{{STATIC_URL}}img/disciplinas/kids/th/kids_01.jpg" alt="Programa Disciplina Kids">
+          </a>
+          </div>
+          <div class="medium-8 columns">
+            <h4><a href="/kids">Kids</a></h4>
+            <p>El Jiu-jitsu Brasileño proporcionará una divertida y exigente sesión de ejercicios cardiovasculares para su hijo y le encantara hacerlo. La parte más difícil para mantener en forma a los niños hoy en día es alejarlos de la computadora o de los videojuegos.</p>
+            <p class="text-right"><a href="/kids">Saber más</a></p>
+            
+          </div>
+        </div> <!-- EndKids -->
+        <br />
+        <div class="row"> <!-- Begin Judo -->
+          <div class="medium-4 columns">
+            <a href="{{STATIC_URL}}img/disciplinas/judo/judo_01.jpg">
+            <img class="th radius" src="{{STATIC_URL}}img/disciplinas/judo/th/judo_01.jpg" alt="Programa Disciplina Judo">
+          </a>
+          </div>
+          <div class="medium-8 columns">
+            <h4><a href="/judo">Judo</a></h4>
+            <p>El Judo es un arte marcial y deporte de combate de origen japonés. Actualmente en su forma deportiva se especializa en los lanzamientos, las sumisiones y las estrangulaciones.</p>
+            <p class="text-right"><a href="/judo">Saber más</a></p>
+            
+          </div>
+        </div> <!-- End Judo -->
+        <br />
+        <div class="row"> <!-- Begin sumision -->
+          <div class="medium-4 columns">
+            <a href="{{STATIC_URL}}img/disciplinas/sumision/sumision_01.jpg">
+            <img class="th radius" src="{{STATIC_URL}}img/disciplinas/sumision/th/sumision_01.jpg" alt="Programa Disciplina sumision"></a>
+          </div>
+          <div class="medium-8 columns">
+            <h4><a href="/sumision">Sumisión</a></h4>
+            <p>Submission Grappling se refiere a todos aquellos sistemas de lucha cuerpo a cuerpo que no involucran golpes para vencer al rival, sino que se utilizan técnicas de derribo, de posición o sumisión para conseguir puntos o forzar su rendición.</p>
+            <p class="text-right"><a href="/sumision">Saber más</a></p>
+            
+          </div>
+        </div> <!-- End sumision -->
+        <br />
+        <div class="row"> <!-- Begin bjj -->
+          <div class="medium-4 columns">
+            <a href="{{STATIC_URL}}img/disciplinas/bjj/bjj_07.jpg">
+            <img class="th radius" src="{{STATIC_URL}}img/disciplinas/bjj/th/bjj_07.jpg" alt="Programa Disciplina bjj"></a>
+          </div>
+          <div class="medium-8 columns">
+            <h4><a href="/bjj">Jiu Jitsu Brasileño (BJJ)</a></h4>
+            <p>El jiu-jitsu brasileño es un arte marcial, deporte de combate y sistema de defensa personal, enfocado principalmente en la lucha cuerpo a cuerpo y en el suelo. Sus técnicas incluyen: lanzamientos, derribos, luxaciones articulares, estrangulaciones, y sumisiones.</p>
+            <p class="text-right"><a href="/bjj">Saber más</a></p>
+            
+          </div>
+        </div> <!-- End bjj -->
+        <br />
+         <div class="row"> <!-- Begin Box -->
+          <div class="medium-4 columns">
+            <a href="{{STATIC_URL}}img/disciplinas/box/box_01.jpg">
+            <img class="th radius" src="{{STATIC_URL}}img/disciplinas/box/th/box_01.jpg" alt="Programa Disciplina Box"></a>
+          </div>
+          <div class="medium-8 columns">
+            <h4><a href="/Box">Box</a></h4>
+            <p>Deporte de combate en el que dos contrincantes luchan utilizando únicamente sus puños con guantes, golpeando a su adversario de la cintura hacia arriba, en breves secuencias de lucha denominadas asaltos o rounds y de acuerdo a un preciso reglamento, el cual regula categorías de pesos y duración del encuentro.</p>
+            <p class="text-right"><a href="/Box">Saber más</a></p>
+            
+          </div>
+        </div> <!-- End Box -->
+        <br />
+        <div class="row"> <!-- Begin Crossfit -->
+          <div class="medium-4 columns">
+            <a href="{{STATIC_URL}}img/disciplinas/crossfit/crossfit_01.jpg">
+            <img class="th radius" src="{{STATIC_URL}}img/disciplinas/crossfit/th/crossfit_01.jpg" alt="Programa Disciplina Crossfit"></a>
+          </div>
+          <div class="medium-8 columns">
+            <h4><a href="/crossfit">Crossfit</a></h4>
+            <p>CrossFit es un programa de fuerza y acondicionamiento físico con el objetivo de mejorar entre otras cosas, fuerza muscular, resistencia cardio-respiratoria, y flexibilidad. Propone una mezcla cambiante de ejercicios aerobicos, gimnasia (ejercicios con peso propio), y Levantamiento de Pesos Olimpicos.</p>
+            <p class="text-right"><a href="/crossfit">Saber más</a></p>
+            
+          </div>
+        </div> <!-- End Crossfit -->
+        <br />
+        <div class="row"> <!-- Begin mma -->
+          <div class="medium-4 columns">
+            <a href="{{STATIC_URL}}img/disciplinas/kids/kids_mma_01.jpg">
+            <img class="th radius" src="{{STATIC_URL}}img/disciplinas/kids/th/kids_mma_01.jpg" alt="Programa Disciplina mma"></a>
+          </div>
+          <div class="medium-8 columns">
+            <h4><a href="/mma">Artes Marciales Mixtas</a></h4>
+            <p>Las Artes Marciales Mixtas es un estilo de pelea que incorpora tanto golpes como tecnicas de lucha en pie y en el suelo, las artes marciales mixtas pueden ser practicadas en un torneo en el cual dos competidores intentan vencer cada uno a su oponente usando un amplio rango de tecnicas permitidas.</p>
+            <p class="text-right"><a href="/mma">Saber más</a></p>
+
+          </div>
+        </div> <!-- End mma -->
+
+      </div> <!-- End Columns -->
+    </div> <!-- End Row -->
+  </section>
+  <section id="instructores" class="afterHero">
+    <div class="row">
+      <div class="small-12 columns">
+        <h3 class="text-center">INSTRUCTORES</h3>
+        <div class="row">
+          <div class="medium-4 columns text-center">
+            <h3>Conoce a Brian</h3>
+            <img width="325" class="th perfil" src="{{STATIC_URL}}/img/instructores/brian/brian_01.jpg" alt="Instructor Brian M. Barbour">
+            <a class="button small expand" href="/instructores/brian">Conoce más de Brian</a>
+          </div>
+          <div class="medium-4 columns text-center">
+            <h3>Conoce a Pako</h3>
+            <img width="325" class="th perfil" src="{{STATIC_URL}}/img/instructores/pako/pako_01.jpg" alt="Instructor Paco">
+            <a class="button small expand" href="/instructores/pako">Conoce más de Pako</a>
+          </div>
+          <div class="medium-4 columns text-center">
+            <h3>Conoce a Edu</h3>
+            <img width="325" class="th perfil" src="{{STATIC_URL}}/img/instructores/edu/edu_01.jpg" alt="Instructor Edu">
+            <a class="button small expand" href="/instructores/edu">Conoce más de Edu</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <section id="galerias" class="afterHero">
+    <div class="row">
+      <div class="small-12 columns">
+        <h3 class="text-center">GALERIAS</h3>
+        <div class="row">
+          <div class="medium-6 columns text-center">
+            <h3 text-center>VÍDEOS</h3>
+            <p>Nuestros vídeos son increibles pero más es estar aquí entrenando, animate a entrenar en <a href="/">Fenix Fight Club</a>.</p>
+            <div class="row">
+              <div class="small-12 columns">
+                <div class="flex-video">
+                    <iframe width="720" height="480" src="//www.youtube.com/embed/XlpARG4xJPk?theme=light&color=white&autoplay=0&loop=1&rel=0" frameborder="0" allowfullscreen></iframe>
+                 </div>
+              </div>
+            </div>
+            <a class="button small expand" href="/galeria/videos">Conocer más</a>
+
+          </div>
+          <div class="medium-6 columns text-center">
+            <h3>FOTOGRAFÍAS</h3>
+            <p>Conoce nuestras instalaciones, eventos y la buena convivencia entre todos los integrantes de <a href="/">Fenix Fight Club</a>.</p>
+            <img class="th radius" src="{{STATIC_URL}}img/home/th/home_05.jpg" alt="Un día en el Gym">
+            
+            <a class="button small expand" href="/galeria/fotos">Conocer más</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <section id="about" class="afterHero">
+    <div class="row">
+      <div class="small-12 columns">
+        <h3 class="text-center">QUIENES SOMOS</h3>
+        <p>Somos un <a href="http://ffcmexico.com" class="text normal">Club de Deportes</a>, contamos con diferentes programas a los cuales puedes integrarte, nuestro objetivo es la <strong>convivencia sana y deportiva</strong> por eso los programas que tenemos están abiertos para todas las edades, como son las <a href="http://ffcmexico.com" class="text normal">Artes Marciales Mixtas</a>, <a href="http://ffcmexico.com" class="text normal">Jiu jitsu Brasileño</a>, <a href="http://ffcmexico.com" class="text normal">Box</a>, <a href="http://ffcmexico.com" class="text normal">Judo</a>, <a href="http://ffcmexico.com" class="text normal">Sumisión </a>y <a href="http://ffcmexico.com" class="text normal">Crossfit</a>. Nuestras clases son impartidas por instructores certificados, planeadas para que obtengas los mejores resultados en tu desempeño, combinando ejercicios de <strong>agilidad</strong>, <strong>fuerza</strong> y <strong>destreza</strong>. Anímate a venir con nosotros, toma tu semana gratis y únete a <a href="http://ffcmexico.com" class="text normal">Fenix Fight Club</a>, ¡Te esperamos!</p>
+        <div class="row">
+          <div class="small-12 columns text-center">
+            <img width="400" class="th perfil" src="{{STATIC_URL}}img/home/home_04_500x.jpg" alt="Boss of Fenix Fight Club">
+          </div>
+        </div>
+        
+        
+
+      </div>
+    </div>
+  </section>  
 {%endblock%}

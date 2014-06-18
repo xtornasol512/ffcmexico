@@ -9,21 +9,34 @@
 {%block morecss%}{%endblock%}
 <!-- body-->
 {% block contenido %}
+<section id="galerias" class="afterHero">
     <div class="row">
-        <div class="small-12 medium-10 columns">
-            <h1>Galerias de Fotos y Videos Fenix Fight Club</h1>
-            <h2>Ven y disfruta de nuestras instalaciones</h2>
-        </div>
-    </div>
-    <section>
+      <div class="small-12 columns">
+        <h3 class="text-center">GALERIAS</h3>
         <div class="row">
-            <div class="small-12 columns">
-                <span class='st_facebook_large' displayText='Facebook'></span>
-                <span class='st_twitter_large' displayText='Tweet'></span>
-                <span class='st_googleplus_large' displayText='Google +'></span>
-                <span class='st_email_large' displayText='Email'></span>
-                <span class='st_sharethis_large' displayText='ShareThis'></span>
+          <div class="medium-6 columns text-center">
+            <h3 text-center>Vídeos</h3>
+            <p>Nuestros vídeos son increibles pero más es estar aquí entrenando, animate a entrenar en <a href="/">Fenix Fight Club</a>.</p>
+            <div class="row">
+              <div class="small-12 columns">
+                <div class="flex-video">
+                    <iframe width="720" height="480" src="//www.youtube.com/embed/XlpARG4xJPk?theme=light&color=white&autoplay=1&loop=1&rel=0" frameborder="0" allowfullscreen></iframe>
+                 </div>
+              </div>
             </div>
+            <a class="button small expand" href="/galeria/videos">Ver todos los Vídeos</a>
+
+          </div>
+          <div class="medium-6 columns text-center">
+            <h3>Fotografias</h3>
+            <p>Conoce nuestras instalaciones, eventos y la buena convivencia entre todos los integrantes de <a href="/">Fenix Fight Club</a>.</p>
+            <img class="th radius" src="{{STATIC_URL}}img/home/th/home_05.jpg" alt="Un día en el Gym">
+            
+            <a class="button small expand" href="/galeria/fotos">Ver todas las Imágenes</a>
+          </div>
         </div>
-    </section>
+
+      </div>
+    </div>
+  </section>
 {% endblock %}

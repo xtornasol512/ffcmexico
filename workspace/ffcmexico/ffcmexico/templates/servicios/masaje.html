@@ -1,15 +1,32 @@
-{% extends 'base.html' %}
-<!-- Head-->
-{% block title %}{% block og_title %}Fenix Fight Club Mexico{% endblock %}{% endblock %}
-{%block rel_canonical%}http://ffcmexico.com{%endblock%}
-{%block og_type%}{%endblock%}
-{% block descripcion %}{% block og_descripcion %}Curso de Diseño y desarrollo Web, Aprende a crear tu entorno de trabajo como un experto. {% endblock %} {% endblock %}
-{% block keywords %}Diseño Web, Desarrollo Web, Workflow, Tehuacan, Puebla, Cursos{% endblock %}
-{% block og_img %} {% endblock %}
+{% extends "base.html" %}
+{% block title %}{% block og_title %}Masaje{% endblock %}{% endblock %}
+{%block rel_canonical%}http://ffcmexico.com/servicios/masaje{%endblock%}
+{% block descripcion %}{% block og_descripcion %}El masaje para el deportista se aplica para: “la prevención, lucha contra la fatiga, incremento de la capacidad de trabajo y apoyo en el tratamiento de las lesiones”{% endblock %} {% endblock %}
+{% block keywords %}Nutricion, Alimentos sanos, Bajar de peso, Perdida de peso, Deportes, Dieta, Tehuacan{% endblock %}
+{% block og_img %}{% endblock %}
 {%block morecss%}{%endblock%}
 <!-- body-->
 {% block contenido %}
-<div class="fb-comments" data-href="http://ffcmexico.com/" data-numposts="1" data-colorscheme="light"></div> 
+<section class="ProfileHero bg-horario">
+        <div class="row">
+            <div class="medium-10 small-centered columns heading text-align-center">
+                <h1 class="animated fadeInUp">Estrella Marzul Coello</h1>
+                <p>Masajista / Instructora</p>
+                <img class="th perfil" width="200" src="{{STATIC_URL}}img/servicios/masaje/masaje_01.jpg" alt="Estrella Marzul Coella Masajista e Instructora en Fenix Fight CLub">
+
+            </div>
+        </div>
+</section>
+<section class="afterProfileHero">
+    <div class="row">
+        <div class="small-12 columns text-center">
+            <h3>Estrella Marzul Coello</h3>
+            <p>Masajista en FFCMéxico</p>
+            <h3>El masaje para el deportista se aplica para: “la prevención, lucha contra la fatiga, incremento de la capacidad de trabajo y apoyo en el tratamiento de las lesiones”</h3>
+
+        </div>
+    </div>
+</section>
 {% endblock %}
 {%block afterfoundationjs%}{%endblock%}
-{%block morejs%}{%endblock%}
+{%block morejs%}{%endblock%}<!-- Head-->

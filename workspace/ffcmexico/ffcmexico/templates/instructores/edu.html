@@ -1,1 +1,49 @@
 {% extends "base.html" %}
+{% block title %}{% block og_title %}Edu{% endblock %}{% endblock %}
+{%block rel_canonical%}http://ffcmexico.com/instructores/edu{%endblock%}
+{% block descripcion %}{% block og_descripcion %}Asistente de entrenador de MMA, Entrenamiento mental, Desarrollo de pateo para Artes Marciales Mixtas, Tercer Dan de Tae Kwon Do{% endblock %} {% endblock %}
+{% block keywords %}Entrenamiento mental, Sparring, Kickboxing, Artes Marciales Mixtas, Entrenador, MMA{% endblock %}
+{% block og_img %}{% endblock %}
+{%block morecss%}{%endblock%}
+{% block contenido %}
+<section class="ProfileHero bg-brian">
+        <div class="row">
+            <div class="medium-10 small-centered columns heading text-align-center">
+                <h1 class="animated fadeInUp"> Eduardo "Edu" Salvador Cruz </h1>
+                <p>Asistente de entrenador de MMA, Entrenamiento mental</p>
+                <img class="th perfil" width="200" src="{{STATIC_URL}}img/instructores/edu/edu_01.jpg" alt="Edu Maestro e Instructor en Fenix Fight CLub">
+
+            </div>
+        </div>
+</section>
+<section class="afterProfileHero">
+    <div class="row">
+        <div class="small-12 columns">
+            <h3 class="text-center">Eduardo Salvador Cruz</h3>
+            <p class="text-center">Maestro / Instructor en Fenix Fight Club México ofrece Entrenamiento mental, Sparring, Kickboxing, Artes Marciales Mixtas,  MMA en Tehuacán, Puebla.</p>
+            <p>Contenido de Biografia</p>
+            <ol>
+                <li>22 años de experiencia</li>
+                <li>Seleccionado estatal de 1999 al 2002</li>
+                <li>Entrenador de la selección de Tehuacán en el 2003</li>
+                <li>Entrenador de la Seleccion IMSS en 2004</li>
+                <li>Entrenador Estatal en 2005</li>
+            </ol>
+            <h3>LOGROS</h3>
+            <ol>
+                <li>24 seleccionados estatales</li>
+                <li>6 medallistas en olimpiadas nacionales</li>
+                <li>Atletas becados en las universidades más importantes del estado</li>
+            </ol>
+            <h3 class="text-center">AVALADO POR:</h3>
+            <ul class="no-bullet text-center">
+                <li>Academia Deportiva de Taekwondo</li>
+                <li>Asociación Poblana de Taekwondo</li>
+                <li>Federación Mexicana de Taekwondo</li>
+                <li>Asociación Panamericana de Taekwondo</li>
+                <li>Federación Mundial de Taekwondo</li>
+            </ul>
+        </div>
+    </div>
+</section>
+{% endblock %}

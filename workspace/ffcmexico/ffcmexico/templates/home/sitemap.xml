@@ -26,6 +26,17 @@
    </url>
    <url>
 
+      <loc>http://ffcmexico.com/faqs</loc>
+
+      <lastmod>2014-08-2014</lastmod>
+
+      <changefreq>weekly</changefreq>
+
+      <priority>0.8</priority>
+
+   </url>
+   <url>
+
       <loc>http://ffcmexico.com/horario</loc>
 
       <lastmod>2013-01-01</lastmod>
@@ -258,6 +269,28 @@
    <url>
 
       <loc>http://ffcmexico.com/galeria/fotos</loc>
+
+      <lastmod>2014-08-2014</lastmod>
+
+      <changefreq>weekly</changefreq>
+
+      <priority>0.8</priority>
+
+   </url>
+   <url>
+
+      <loc>http://ffcmexico.com/freeweek</loc>
+
+      <lastmod>2014-08-2014</lastmod>
+
+      <changefreq>weekly</changefreq>
+
+      <priority>0.8</priority>
+
+   </url>
+   <url>
+
+      <loc>http://ffcmexico.com/mapa</loc>
 
       <lastmod>2014-08-2014</lastmod>
 
