@@ -17,3 +17,6 @@
 [12-Jun-2014 23:26:47 America/Denver] PHP Notice:  Undefined index: comentarios in /home4/phyroser/djangoprojects/ffcmexico/front-end/scphp/mail.php on line 63
 [12-Jun-2014 23:26:47 America/Denver] PHP Notice:  Undefined index: edad in /home4/phyroser/djangoprojects/ffcmexico/front-end/scphp/mail.php on line 64
 [12-Jun-2014 23:26:47 America/Denver] PHP Notice:  Undefined index: telefono in /home4/phyroser/djangoprojects/ffcmexico/front-end/scphp/mail.php on line 65
+[17-Jun-2014 12:41:14 America/Denver] PHP Notice:  Undefined index: comentarios in /home4/phyroser/djangoprojects/ffcmexico/front-end/scphp/mail.php on line 63
+[17-Jun-2014 12:41:14 America/Denver] PHP Notice:  Undefined index: edad in /home4/phyroser/djangoprojects/ffcmexico/front-end/scphp/mail.php on line 64
+[17-Jun-2014 12:41:14 America/Denver] PHP Notice:  Undefined index: telefono in /home4/phyroser/djangoprojects/ffcmexico/front-end/scphp/mail.php on line 65
