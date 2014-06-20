@@ -109,6 +109,14 @@ border-radius: 50%;
 .break{
     text-align: justify;
 }
+.gradient-silver{
+    background-color: gray;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, rgba(255,255,255,.5)));
+    background-image: -webkit-linear-gradient(transparent 50%, rgba(255,255,255,.5) 50%);
+    background-image: linear-gradient(transparent 50%, rgba(255,255,255,.5) 50%);
+    -webkit-background-size: 50px 50px;
+    background-size: 50px 50px;
+}
 .bg-contacto{
     background: url(/static/img/bgs/bg-contacto.jpg) 0 0 no-repeat;
     -webkit-background-size: cover;

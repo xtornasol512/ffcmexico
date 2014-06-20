@@ -10,6 +10,10 @@ import time
 #Dicccionario ejemplo
 my_data_dict= {'hola':"fatima"}
 my_data = {'noenviado': "hola"}
+activePr = {'activaP': True}
+activeSe = {'activaS': True}
+activeIn = {'activaI': True}
+activeC = {'activaC': True}
 #horario_actual = time.now()
 """
 =====DIRECTORIO PRINCIPAL===========
@@ -31,7 +35,7 @@ def terminos(request):
 #Paginas Base
 def contacto(request):
     return render_to_response('home/contacto.html',
-                          my_data_dict,
+                          activeC,
                           context_instance=RequestContext(request))
 
 def sink(request):
@@ -64,7 +68,7 @@ def freeweek(request):
 
 def maps(request):
     return render_to_response('home/mapa.html',
-                          my_data_dict,
+                          activeC,
                           context_instance=RequestContext(request))
 def galeria(request):
     return render_to_response('galeria/galeria.html',
@@ -84,87 +88,87 @@ def fotos(request):
 #Instructores
 def brian(request):
     return render_to_response('instructores/brian.html',
-                          my_data_dict,
+                          activeIn,
                           context_instance=RequestContext(request))
 
 def instructores(request):
     return render_to_response('instructores/instructores.html',
-                          my_data_dict,
+                          activeIn,
                           context_instance=RequestContext(request))
 
 def pako(request):
     return render_to_response('instructores/pako.html',
-                          my_data_dict,
+                          activeIn,
                           context_instance=RequestContext(request))
 
 def edu(request):
     return render_to_response('instructores/edu.html',
-                          my_data_dict,
+                          activeIn,
                           context_instance=RequestContext(request))
 #Programas
 def programas(request):
     return render_to_response('programas/programas.html',
-                          my_data_dict,
+                          activePr,
                           context_instance=RequestContext(request))
 
 def kids(request):
     return render_to_response('programas/kids.html',
-                          my_data_dict,
+                          activePr,
                           context_instance=RequestContext(request))
 
 def bjj(request):
     return render_to_response('programas/bjj.html',
-                          my_data_dict,
+                          activePr,
                           context_instance=RequestContext(request))
 
 def mma(request):
     return render_to_response('programas/mma.html',
-                          my_data_dict,
+                          activePr,
                           context_instance=RequestContext(request))
 
 def kids(request):
     return render_to_response('programas/kids.html',
-                          my_data_dict,
+                          activePr,
                           context_instance=RequestContext(request))
 
 def box(request):
     return render_to_response('programas/box.html',
-                          my_data_dict,
+                          activePr,
                           context_instance=RequestContext(request))
 
 def cross(request):
     return render_to_response('programas/cross.html',
-                          my_data_dict,
+                          activePr,
                           context_instance=RequestContext(request))
 
 def sumision(request):
     return render_to_response('programas/sumision.html',
-                          my_data_dict,
+                          activePr,
                           context_instance=RequestContext(request))
 
 def judo(request):
     return render_to_response('programas/judo.html',
-                          my_data_dict,
+                          activePr,
                           context_instance=RequestContext(request))
 
 #Servicios
 def servicios(request):
     return render_to_response('servicios/servicios.html',
-                          my_data_dict,
+                          activeSe,
                           context_instance=RequestContext(request))
 def terapia(request):
     return render_to_response('servicios/terapia.html',
-                          my_data_dict,
+                          activeSe,
                           context_instance=RequestContext(request))
 
 def nutricion(request):
     return render_to_response('servicios/nutricion.html',
-                          my_data_dict,
+                          activeSe,
                           context_instance=RequestContext(request))
 
 def masaje(request):
     return render_to_response('servicios/masaje.html',
-                          my_data_dict,
+                          activeSe,
                           context_instance=RequestContext(request))
 
 """
