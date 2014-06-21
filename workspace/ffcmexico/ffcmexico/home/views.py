@@ -5,7 +5,7 @@ from django.template import RequestContext
 from django.http import HttpResponseRedirect
 from django.http import HttpResponsePermanentRedirect as redirect301
 from mail import mailing
-import time
+from horario import isToday
 
 #Dicccionario ejemplo
 my_data_dict= {'hola':"fatima"}
@@ -14,7 +14,7 @@ activePr = {'activaP': True}
 activeSe = {'activaS': True}
 activeIn = {'activaI': True}
 activeC = {'activaC': True}
-#horario_actual = time.now()
+
 """
 =====DIRECTORIO PRINCIPAL===========
 """
@@ -43,8 +43,9 @@ def sink(request):
                           my_data_dict,
                           context_instance=RequestContext(request))
 def horario(request):
+    horario = isToday()
     return render_to_response('home/horario.html',
-                          my_data_dict,
+                          horario,
                           context_instance=RequestContext(request))
 
 def nosotros(request):

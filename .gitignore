@@ -7,5 +7,5 @@ node_modules/
 *.ico
 front-end/temp
 back-end/temp
-
+front-end/scphp
 front-end/scphp/

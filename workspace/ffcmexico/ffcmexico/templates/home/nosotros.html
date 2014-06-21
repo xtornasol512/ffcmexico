@@ -2,7 +2,7 @@
 <!-- Head-->
 {% block title %}{% block og_title %}Nosotros{% endblock %}{% endblock %}
 {%block rel_canonical%}http://ffcmexico.com/nosotros{%endblock%}
-{%block og_type%}{%endblock%}
+{%block og_type%}website{%endblock%}
 {% block descripcion %}{% block og_descripcion %}Conoce más acerca de nosotros {% endblock %} {% endblock %}
 {% block keywords %}Artes marciales, Acerca de, vision, mision, gym, historia{% endblock %}
 {% block og_img %} {% endblock %}
@@ -16,11 +16,17 @@
             </div>
         </div>
     </section>
-    <section>
+    <section id="aboutUS" class="afterHero">
         <div class="row">
             <div class="small-12 columns">
-                <h3>Bienvenido a Fenix Fight Club</h3>
-                <p class="text-center"></p>
+                <h3 class="text-center"><strong>Bienvenido a Fenix Fight Club</strong</h3>
+                <h3 class="text-center">QUIENES SOMOS</h3>
+                <p>Somos un <a href="/" class="text normal">Club de Deportes</a>, contamos con diferentes programas a los cuales puedes integrarte, nuestro objetivo es la <strong>convivencia sana y deportiva</strong> por eso los programas que tenemos están abiertos para todas las edades, como son las <a href="/mma" class="text normal">Artes Marciales Mixtas</a>, <a href="/bjj" class="text normal">Jiu jitsu Brasileño</a>, <a href="/box" class="text normal">Box</a>, <a href="http://ffcmexico.com" class="text normal">Judo</a>, <a href="/sumision" class="text normal">Sumisión </a>y <a href="/crossfit" class="text normal">Crossfit</a>. Nuestras clases son impartidas por instructores certificados, planeadas para que obtengas los mejores resultados en tu desempeño, combinando ejercicios de <strong>agilidad</strong>, <strong>fuerza</strong> y <strong>destreza</strong>. Anímate a venir con nosotros, toma tu semana gratis y únete a <a href="/" class="text normal">Fenix Fight Club</a>, ¡Te esperamos!</p>
+                <div class="row">
+                  <div class="small-12 columns text-center">
+                    <img width="400" class="th perfil" src="{{STATIC_URL}}img/home/home_04_500x.jpg" alt="Bienvenido a Fenix Fight Club">
+                  </div>
+                </div>
             </div>
         </div>
     </section>

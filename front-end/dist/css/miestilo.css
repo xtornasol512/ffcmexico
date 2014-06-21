@@ -7,11 +7,33 @@ h1, h2, h3, h4, h5, p{
     font-family: "Lato", "Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight:300;
 }
+.accordion dd > a {
+    background: #008cba;
+    color: #FFFFFF;
+}
+.accordion dd.active > a {
+    background: #e8e8e8;
+    color: black;
+}
+.accordion dd > a:hover {
+    background: #1193BE;
+}
+.tabs .tab-title.active a {
+background: #008cba;
+color: #FFFFFF;
+}
 #videoHD{
     height: 480px;
 }
 #SlideHero div ul li .orbit-caption{
     font-size: 2.5em;
+}
+#SlideHero div ul li h3 {
+color: white;
+position: absolute;
+font-weight: bold;
+bottom: 455px;
+margin-left: 4em;
 }
 #logo-menu .panel{
     margin-bottom: 0;

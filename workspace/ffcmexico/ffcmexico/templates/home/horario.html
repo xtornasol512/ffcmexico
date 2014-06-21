@@ -2,7 +2,7 @@
 <!-- Head-->
 {% block title %}{% block og_title %}Horario de Clases{% endblock %}{% endblock %}
 {%block rel_canonical%}http://ffcmexico.com/horario{%endblock%}
-{%block og_type%}{%endblock%}
+{%block og_type%}website{%endblock%}
 {% block descripcion %}{% block og_descripcion %}Horario de Clases de Fenix Fight Club{% endblock %} {% endblock %}
 {% block keywords %}Horario de Clase, Gym, Cursos, Seminarios, Tehuacan, Training, Kids{% endblock %}
 {% block og_img %}{% endblock %}
@@ -21,15 +21,15 @@
             <div class="medium-10 small-centered columns">
                 <h3 class="text-center">¡Consulta nuestra Horario para no perderte ninguna clase!</h3>
                 <ul class="tabs" data-tab>
-                  <li class="tab-title"><a href="#lunes"><span class="show-for-medium-down">Lun.</span><span class="show-for-large-up">Lunes</span></a></li>
-                  <li class="tab-title"><a href="#martes"><span class="show-for-medium-down">Mar.</span><span class="show-for-large-up">Martes</span></a></li>
-                  <li class="tab-title"><a href="#miercoles"><span class="show-for-medium-down">Mié.</span><span class="show-for-large-up">Miércoles</span></a></li>
-                  <li class="tab-title"><a href="#jueves"><span class="show-for-medium-down">Jue.</span><span class="show-for-large-up">Jueves</span></a></li>
-                  <li class="tab-title active"><a href="#viernes"><span class="show-for-medium-down">Vie.</span><span class="show-for-large-up">Viernes</span></a></li>
-                  <li class="tab-title"><a href="#sabado"><span class="show-for-medium-down">Sáb.</span><span class="show-for-large-up">Sábado</span></a></li>
+                  <li class="tab-title {%if isMonday%}active{%endif%}{%if isSunday%}active{%endif%}"><a href="#lunes"><span class="show-for-medium-down">Lun.</span><span class="show-for-large-up">Lunes</span></a></li>
+                  <li class="tab-title {%if isTuesday%}active{%endif%}"><a href="#martes"><span class="show-for-medium-down">Mar.</span><span class="show-for-large-up">Martes</span></a></li>
+                  <li class="tab-title {%if isWednesday%}active{%endif%}"><a href="#miercoles"><span class="show-for-medium-down">Mié.</span><span class="show-for-large-up">Miércoles</span></a></li>
+                  <li class="tab-title {%if isThursday%}active{%endif%}"><a href="#jueves"><span class="show-for-medium-down">Jue.</span><span class="show-for-large-up">Jueves</span></a></li>
+                  <li class="tab-title {%if isFriday%}active{%endif%}"><a href="#viernes"><span class="show-for-medium-down">Vie.</span><span class="show-for-large-up">Viernes</span></a></li>
+                  <li class="tab-title {%if isSaturday%}active{%endif%}"><a href="#sabado"><span class="show-for-medium-down">Sáb.</span><span class="show-for-large-up">Sábado</span></a></li>
               </ul>
               <div class="tabs-content">
-                  <div class="content" id="lunes">
+                  <div class="content {%if isMonday%}active{%endif%}{%if isSunday%}active{%endif%}" id="lunes">
                     <div class="row">
                         <div class="small-12 columns">
                             <table>
@@ -108,7 +108,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="content" id="martes">
+                <div class="content {%if isTuesday%}active{%endif%}" id="martes">
                     <div class="row">
                         <div class="small-12 columns">
                             <table>
@@ -181,7 +181,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="content" id="miercoles">
+                <div class="content {%if isWednesday%}active{%endif%}" id="miercoles">
                     <div class="row">
                         <div class="small-12 columns">
                             <table>
@@ -257,7 +257,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="content" id="jueves">
+                <div class="content {%if isThursday%}active{%endif%}" id="jueves">
                     <div class="row">
                         <div class="small-12 columns">
                             <table>
@@ -330,7 +330,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="content active" id="viernes">
+                <div class="content {%if isFriday%}active{%endif%}" id="viernes">
                     <div class="row">
                         <div class="small-12 columns">
                             <table>
@@ -379,7 +379,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="content" id="sabado">
+                <div class="content {%if isSaturday%}active{%endif%}" id="sabado">
                     <div class="row">
                         <div class="small-12 columns">
                             <table>

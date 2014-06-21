@@ -2,8 +2,8 @@
 <!-- Head-->
 {% block title %}{% block og_title %}Fenix Fight Club México{% endblock %}{% endblock %}
 {% block rel_canonical%}http://ffcmexico.com{%endblock%}
-{% block og_type%}{%endblock%}
-{% block descripcion %}{% block og_descripcion %}Aprende Artes Marciales Mixtas, Jiu Jitsu Brasileño y más en Fenix Fight Club México {% endblock %} {% endblock %}
+{% block og_type%}website{%endblock%}
+{% block descripcion %}{% block og_descripcion %}Aprende Artes Marciales Mixtas, Jiu Jitsu Brasileño, Box y más en Fenix Fight Club México {% endblock %} {% endblock %}
 {% block keywords %}Artes Marciales Mixtas, Jiu Jitsu, Box, Judo, Crossfit{% endblock %}
 <!-- body-->
 {% block contenido %}
@@ -11,7 +11,7 @@
         <ul class="example-orbit" data-orbit data-options="animation_speed:1500;slide_number: false;bullets: false; timer: true">
           <li >
             <img src="{{STATIC_URL}}img/home/home_01.jpg" alt="slide 1" />
-            
+            <h3>Somos parte del Equipo <strong><em>BRASA Jiu Jitsu</em></strong></h3>
             <div class="orbit-caption show-for-large-up">
               Bienvenido a Fenix Fight Club México
               <a href="/servicios" class="button medium ">Servicios</a>
@@ -108,7 +108,7 @@
         <br />
         <div class="row"> <!-- BeginKids -->
           <div class="medium-4 columns">
-          <a href="{{STATIC_URL}}img/disciplinas/kids/kids_01.jpg">
+          <a href="/kids">
             <img class="th radius" src="{{STATIC_URL}}img/disciplinas/kids/th/kids_01.jpg" alt="Programa Disciplina Kids">
           </a>
           </div>
@@ -122,7 +122,7 @@
         <br />
         <div class="row"> <!-- Begin Judo -->
           <div class="medium-4 columns">
-            <a href="{{STATIC_URL}}img/disciplinas/judo/judo_01.jpg">
+            <a href="/judo">
             <img class="th radius" src="{{STATIC_URL}}img/disciplinas/judo/th/judo_01.jpg" alt="Programa Disciplina Judo">
           </a>
           </div>
@@ -136,7 +136,7 @@
         <br />
         <div class="row"> <!-- Begin sumision -->
           <div class="medium-4 columns">
-            <a href="{{STATIC_URL}}img/disciplinas/sumision/sumision_01.jpg">
+            <a href="/sumision">
             <img class="th radius" src="{{STATIC_URL}}img/disciplinas/sumision/th/sumision_01.jpg" alt="Programa Disciplina sumision"></a>
           </div>
           <div class="medium-8 columns">
@@ -149,7 +149,7 @@
         <br />
         <div class="row"> <!-- Begin bjj -->
           <div class="medium-4 columns">
-            <a href="{{STATIC_URL}}img/disciplinas/bjj/bjj_07.jpg">
+            <a href="/bjj">
             <img class="th radius" src="{{STATIC_URL}}img/disciplinas/bjj/th/bjj_07.jpg" alt="Programa Disciplina bjj"></a>
           </div>
           <div class="medium-8 columns">
@@ -162,7 +162,7 @@
         <br />
          <div class="row"> <!-- Begin Box -->
           <div class="medium-4 columns">
-            <a href="{{STATIC_URL}}img/disciplinas/box/box_01.jpg">
+            <a href="/box">
             <img class="th radius" src="{{STATIC_URL}}img/disciplinas/box/th/box_01.jpg" alt="Programa Disciplina Box"></a>
           </div>
           <div class="medium-8 columns">
@@ -175,7 +175,7 @@
         <br />
         <div class="row"> <!-- Begin Crossfit -->
           <div class="medium-4 columns">
-            <a href="{{STATIC_URL}}img/disciplinas/crossfit/crossfit_01.jpg">
+            <a href="/crossfit">
             <img class="th radius" src="{{STATIC_URL}}img/disciplinas/crossfit/th/crossfit_01.jpg" alt="Programa Disciplina Crossfit"></a>
           </div>
           <div class="medium-8 columns">
@@ -188,7 +188,7 @@
         <br />
         <div class="row"> <!-- Begin mma -->
           <div class="medium-4 columns">
-            <a href="{{STATIC_URL}}img/disciplinas/kids/kids_mma_01.jpg">
+            <a href="/mma">
             <img class="th radius" src="{{STATIC_URL}}img/disciplinas/kids/th/kids_mma_01.jpg" alt="Programa Disciplina mma"></a>
           </div>
           <div class="medium-8 columns">
@@ -205,7 +205,7 @@
   <section id="instructores" class="afterHero">
     <div class="row">
       <div class="small-12 columns">
-        <h3 class="text-center">INSTRUCTORES</h3>
+        <h3 class="text-center"><a href="/instructores">INSTRUCTORES</a></h3>
         <div class="row">
           <div class="medium-4 columns text-center">
             <h3>Conoce a Brian</h3>
@@ -230,10 +230,10 @@
   <section id="galerias" class="afterHero">
     <div class="row">
       <div class="small-12 columns">
-        <h3 class="text-center">GALERIAS</h3>
+        <h3 class="text-center"><a href="/galeria">GALERIAS</a></h3>
         <div class="row">
           <div class="medium-6 columns text-center">
-            <h3 text-center>VÍDEOS</h3>
+            <h3 text-center><a href="/galeria/videos">VÍDEOS</a></h3>
             <p>Nuestros vídeos son increibles pero más es estar aquí entrenando, animate a entrenar en <a href="/">Fenix Fight Club</a>.</p>
             <div class="row">
               <div class="small-12 columns">
@@ -246,7 +246,7 @@
 
           </div>
           <div class="medium-6 columns text-center">
-            <h3>FOTOGRAFÍAS</h3>
+            <h3><a href="/galeria/fotos">FOTOGRAFÍAS</a></h3>
             <p>Conoce nuestras instalaciones, eventos y la buena convivencia entre todos los integrantes de <a href="/">Fenix Fight Club</a>.</p>
             <img class="th radius" src="{{STATIC_URL}}img/home/th/home_05.jpg" alt="Un día en el Gym">
             
@@ -261,10 +261,10 @@
     <div class="row">
       <div class="small-12 columns">
         <h3 class="text-center">QUIENES SOMOS</h3>
-        <p>Somos un <a href="http://ffcmexico.com" class="text normal">Club de Deportes</a>, contamos con diferentes programas a los cuales puedes integrarte, nuestro objetivo es la <strong>convivencia sana y deportiva</strong> por eso los programas que tenemos están abiertos para todas las edades, como son las <a href="http://ffcmexico.com" class="text normal">Artes Marciales Mixtas</a>, <a href="http://ffcmexico.com" class="text normal">Jiu jitsu Brasileño</a>, <a href="http://ffcmexico.com" class="text normal">Box</a>, <a href="http://ffcmexico.com" class="text normal">Judo</a>, <a href="http://ffcmexico.com" class="text normal">Sumisión </a>y <a href="http://ffcmexico.com" class="text normal">Crossfit</a>. Nuestras clases son impartidas por instructores certificados, planeadas para que obtengas los mejores resultados en tu desempeño, combinando ejercicios de <strong>agilidad</strong>, <strong>fuerza</strong> y <strong>destreza</strong>. Anímate a venir con nosotros, toma tu semana gratis y únete a <a href="http://ffcmexico.com" class="text normal">Fenix Fight Club</a>, ¡Te esperamos!</p>
+        <p>Somos un <a href="/" class="text normal">Club de Deportes</a>, contamos con diferentes programas a los cuales puedes integrarte, nuestro objetivo es la <strong>convivencia sana y deportiva</strong> por eso los programas que tenemos están abiertos para todas las edades, como son las <a href="/mma" class="text normal">Artes Marciales Mixtas</a>, <a href="/bjj" class="text normal">Jiu jitsu Brasileño</a>, <a href="/box" class="text normal">Box</a>, <a href="/judo" class="text normal">Judo</a>, <a href="/sumision" class="text normal">Sumisión </a>y <a href="/crossfit" class="text normal">Crossfit</a>. Nuestras clases son impartidas por instructores certificados, planeadas para que obtengas los mejores resultados en tu desempeño, combinando ejercicios de <strong>agilidad</strong>, <strong>fuerza</strong> y <strong>destreza</strong>. Anímate a venir con nosotros, toma tu semana gratis y únete a <a href="/" class="text normal">Fenix Fight Club</a>, ¡Te esperamos!</p>
         <div class="row">
           <div class="small-12 columns text-center">
-            <img width="400" class="th perfil" src="{{STATIC_URL}}img/home/home_04_500x.jpg" alt="Boss of Fenix Fight Club">
+            <img width="400" class="th perfil" src="{{STATIC_URL}}img/home/home_04_500x.jpg" alt="Bienvenido a Fenix Fight Club">
           </div>
         </div>
         
