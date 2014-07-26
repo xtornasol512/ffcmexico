@@ -29,11 +29,14 @@ h1, h2, h3, h4, h5, p{
     font-size: 2.5em;
 }
 #SlideHero div ul li h3 {
-    color: white;
+    color: #fff;
     position: absolute;
-    font-weight: bold;
+    font-weight: 700;
+    padding-left: .5em;
+    padding-right: .2em;
     bottom: 510px;
-    margin-left: 2.05em;
+    margin-left: 1.3em;
+    background-color: rgba(0, 0, 0, 0.35);
 }
 #logo-menu .panel{
     margin-bottom: 0;
