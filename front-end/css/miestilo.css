@@ -185,9 +185,6 @@ border-radius: 50%;
     background: url(/static/img/bgs/bg-videos.jpg) 0 0 no-repeat;
     background-size: cover;
 }
-.bg-newsletter{
-
-}
 
 .text-align-center{
     text-align: center;
@@ -200,6 +197,12 @@ border-radius: 50%;
     color: white;
 }
 .alert-box{
+    padding-bottom: .3rem;
+    padding-top: .3rem;
+    margin-bottom: 0px;
+}
+.anuncio{
+
     margin-bottom: 0px;
 }
 .rotarY{
