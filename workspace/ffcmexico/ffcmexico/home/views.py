@@ -177,7 +177,11 @@ def masaje(request):
 """
 #Redirect HOME
 def galeriaRedirect(request):
-  return redirect301('/galeria')
+    return redirect301('/galeria')
+
+def terminosRedirect(request):
+    return redirect301('/privacidad/terminosycondiciones')
+    
 #Redirects Servicios
 def videosRedirect(request):
     return redirect301('/galeria/videos')
