@@ -239,3 +239,6 @@ def youtube(request):
 
 def foursquare(request):
     return redirect('https://es.foursquare.com/v/fenix-fight-club-m%C3%A9xico/4faeb42ee4b0085e227a6b34')
+
+def reluxcinema(request):
+    return redirect('https://www.facebook.com/reluxcinema')

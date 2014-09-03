@@ -93,6 +93,7 @@ urlpatterns=patterns('ffcmexico.home.views',
     url(r'^youtube$', 'youtube'),
     url(r'^4square$', 'foursquare'),
     url(r'^foursquare$', 'foursquare'),
+    url(r'^reluxcinema$', 'reluxcinema'),
 
 
 
