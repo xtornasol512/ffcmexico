@@ -8,27 +8,7 @@
       js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&appId=504922086287468&version=v2.0";
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
-    <div data-alert class="alert-box success show-for-medium-up">
-      Hemos cambiado de ubicación te esperamos <a class="button tiny anuncio" href="/mapa">en Heroés de Nacozari #630</a>
-      Cualquier duda o comentario <a class="button tiny anuncio" href="/contacto">Contactanos</a>
-      <a href="#" class="close">&times;</a>
-    </div>
-    <div data-alert class="alert-box success show-for-small-only">
-      Encuentranos <a class="button tiny anuncio" href="/mapa">en Heroés de Nacozari #630</a>
-      Cualquier duda o comentario <a class="button tiny anuncio" href="/contacto">Contactanos</a>
-      <a href="#" class="close">&times;</a>
-    </div>
-    {%if enviado%}
-    <div data-alert class="alert-box success">
-      Tu mensaje ha sido enviado correctamente
-      <a href="#" class="close">&times;</a>
-    </div>
-    {%elif noenviado%}
-    <div data-alert class="alert-box alert">
-     Tu mensaje no ha sido enviado, vuelvelo a intentar.
-      <a href="#" class="close">&times;</a>
-    </div>
-    {%endif%}
+
 {% endblock %}
 {% block contenido_base %}{% endblock %}
 {% block analytics %}
