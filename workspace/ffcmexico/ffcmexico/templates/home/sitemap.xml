@@ -244,28 +244,7 @@
       <priority>0.5</priority>
 
    </url>
-   <url>
-
-      <loc>http://ffcmexico.com/instructores/pako</loc>
-
-      <lastmod>2014-06-21</lastmod>
-
-      <changefreq>daily</changefreq>
-
-      <priority>0.5</priority>
-
-   </url>
-   <url>
-
-      <loc>http://ffcmexico.com/instructores/edu</loc>
-
-      <lastmod>2014-06-21</lastmod>
-
-      <changefreq>daily</changefreq>
-
-      <priority>0.5</priority>
-
-   </url>
+ 
    <url>
 
       <loc>http://ffcmexico.com/galeria</loc>
