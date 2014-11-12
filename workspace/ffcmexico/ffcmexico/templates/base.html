@@ -28,7 +28,7 @@
     <div class="row">
       <div class="medium-4 columns text-center">
         <h4><a href="/">Fenix Fight Club México</a></h4>
-        <p>Somos un Club de Deportes Úbicado en la <strong>Heroés de Nacozari #630 Colonia Cerritos</strong>.</p>
+        <p>Somos un Club de Deportes Úbicado en la <strong>6 Poniente #115 Col. Centro</strong> con <a href="https://www.facebook.com/gymadrians" target="_blank">Adrian's Gym</a></p>
         <div class="panel callout radius">
           <p>Encuentranos en  <a href="/mapa"><i class="fi-marker icon-large"></i>Google Maps</a></p>
         </div>
@@ -44,9 +44,13 @@
       <div class="medium-4 columns text-center">
         <h4><a href="/">Dudas o Comentarios</a></h4>
         <p>Tienes alguna duda o comentario o sugerencia háznosla saber, te responderemos lo más pronto posible.</p>
-        <a href="#" data-options="align:top" data-dropdown="drop2" class="button small expand secondary round">Ayudanos a mejorar con tu sugerencia</a>
-        <div id="drop2" data-dropdown-content class="f-dropdown large content">
-          <form action="{{STATIC_URL}}scphp/mail.php" method="POST">
+        <a href="#" data-reveal-id="modalSugerencias" class="button small expand secondary round">Ayudanos a mejorar con tu sugerencia</a>
+        
+      </div>
+    </div>
+  </div>
+  <div id="modalSugerencias" class="reveal-modal" data-reveal>
+    <form action="{{STATIC_URL}}scphp/mail.php" method="POST">
             
             <div class="row">
               <div class="large-12 columns">
@@ -61,16 +65,14 @@
                   <input type="text" name="email" placeholder="Pon aquí tu nombre Ej. tuemail@gmail.com" />
                 </label>
                 <label>Cuentanos tus comentarios
-                  <textarea type="text" name="msg" placeholder="Cuentanos tus comentarios y te ayudaremos a ti." ></textarea>
+                  <textarea rows="4" type="text" name="msg" placeholder="Cuentanos tus comentarios y te ayudaremos a ti." ></textarea>
                 </label>
 
                 <button class="round" name="envComentario">Enviar a FFCMéxico</button>
               </div>
             </div>
-          </form>
-        </div>
-      </div>
-    </div>
+        </form>
+        <a class="close-reveal-modal">&#215;</a>
   </div>
 
   <!--SitioMApa -->
