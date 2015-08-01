@@ -2,6 +2,7 @@
 body{
     font-family: "Lato", "Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight:300;
+    font-size:18px;
 }
 h1, h2, h3, h4, h5, p{
     font-family: "Lato", "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -184,6 +185,9 @@ border-radius: 50%;
 .bg-videos{
     background: url(/static/img/bgs/bg-videos.jpg) 0 0 no-repeat;
     background-size: cover;
+}
+.orbit-container .orbit-slides-container img {
+    width: 100%;
 }
 
 .text-align-center{
