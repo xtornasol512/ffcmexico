@@ -117,6 +117,15 @@ def kids(request):
                           activePr,
                           context_instance=RequestContext(request))
 
+def kickboxing(request):
+    return render_to_response('programas/kickboxing.html',
+                          activePr,
+                          context_instance=RequestContext(request))
+def muaythai(request):
+    return render_to_response('programas/muaythai.html',
+                          activePr,
+                          context_instance=RequestContext(request))
+
 def bjj(request):
     return render_to_response('programas/bjj.html',
                           activePr,

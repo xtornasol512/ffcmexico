@@ -94,7 +94,7 @@
 
       <loc>http://ffcmexico.com/programas</loc>
 
-      <lastmod>2014-06-21</lastmod>
+      <lastmod>2016-06-20</lastmod>
 
       <changefreq>daily</changefreq>
 
@@ -105,7 +105,18 @@
 
       <loc>http://ffcmexico.com/programas/kids</loc>
 
-      <lastmod>2014-06-21</lastmod>
+      <lastmod>2016-06-20</lastmod>
+
+      <changefreq>daily</changefreq>
+
+      <priority>0.5</priority>
+
+   </url>
+     <url>
+
+      <loc>http://ffcmexico.com/programas/kickboxing</loc>
+
+      <lastmod>2016-06-20</lastmod>
 
       <changefreq>daily</changefreq>
 
@@ -127,7 +138,18 @@
 
       <loc>http://ffcmexico.com/programas/box</loc>
 
-      <lastmod>2014-06-21</lastmod>
+      <lastmod>2016-06-20</lastmod>
+
+      <changefreq>daily</changefreq>
+
+      <priority>0.5</priority>
+
+   </url>
+   <url>
+
+      <loc>http://ffcmexico.com/programas/muay-thai</loc>
+
+      <lastmod>2016-06-20</lastmod>
 
       <changefreq>daily</changefreq>
 
@@ -138,7 +160,7 @@
 
       <loc>http://ffcmexico.com/programas/artesmarcialesmixtas</loc>
 
-      <lastmod>2014-06-21</lastmod>
+      <lastmod>2016-06-20</lastmod>
 
       <changefreq>daily</changefreq>
 
@@ -149,7 +171,7 @@
 
       <loc>http://ffcmexico.com/programas/jiujitsu</loc>
 
-      <lastmod>2014-06-21</lastmod>
+      <lastmod>2016-06-20</lastmod>
 
       <changefreq>daily</changefreq>
 
@@ -160,7 +182,7 @@
 
       <loc>http://ffcmexico.com/programas/crossfit</loc>
 
-      <lastmod>2014-06-21</lastmod>
+      <lastmod>2016-06-20</lastmod>
 
       <changefreq>daily</changefreq>
 
@@ -171,7 +193,7 @@
 
       <loc>http://ffcmexico.com/programas/sumision</loc>
 
-      <lastmod>2014-06-21</lastmod>
+      <lastmod>2016-06-20</lastmod>
 
       <changefreq>daily</changefreq>
 
@@ -182,7 +204,7 @@
 
       <loc>http://ffcmexico.com/servicios</loc>
 
-      <lastmod>2014-06-21</lastmod>
+      <lastmod>2016-06-20</lastmod>
 
       <changefreq>daily</changefreq>
 

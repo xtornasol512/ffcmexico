@@ -1,0 +1,13 @@
+Django==1.6.4
+Pillow==2.5.1
+South==0.8.4
+django-classy-tags==0.5.1
+django-polymorphic==0.5.5
+django-shop==0.2.0
+djangocms-admin-style==0.2.7
+## FIXME: could not find svn URL in dependency_links for this package:
+flup==1.0.3.dev-20110405
+jsonfield==0.9.20
+psycopg2==2.5.3
+wsgiref==0.1.2
+

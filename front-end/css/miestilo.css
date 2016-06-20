@@ -146,6 +146,21 @@ border-radius: 50%;
     background: url(/static/img/bgs/bg-brian.jpg) 50% 0% no-repeat;
     background-size: cover;
 }
+.bg-kickboxing{
+    background: url(/static/img/bgs/bg-kickboxing.jpg) 50% 0% no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+.bg-muaythai{
+    background: url(/static/img/bgs/bg-muaythai.jpg) 50% 0% no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+.bg-programas{
+    background: url(/static/img/bgs/bg-programas.jpg) 50% 0% no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
 .bg-pako{
     background: url(/static/img/bgs/bg-horario.jpg) 50% 0% no-repeat;
     background-size: cover;
@@ -212,7 +227,6 @@ border-radius: 50%;
 .rotarY{
     transform:rotateY(0deg);
    transition-duration: 1.5s;
-
 }
 .rotarY:hover{
    

@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+<!-- Head-->
+{% block title %}{% block og_title %}KickBoxing Tehuacán{% endblock %}{% endblock %}
+{%block rel_canonical%}http://ffcmexico.com/programas/kickboxing{%endblock%}
+{%block og_type%}website{%endblock%}
+{% block descripcion %}{% block og_descripcion %}El Kickboxing se ha convertido en una parte esencial de la formación moderna del MMA. También se practica ampliamente para la defensa personal y es considerado  una excelente opción para la condición física en general.{% endblock %} {% endblock %}
+{% block keywords %}Kickboxing, Muay thai, defensa personal, Boxeo Occidental, mma{% endblock %}
+{% block og_img %}{% endblock %}
+{%block morecss%}{%endblock%}
+{% block contenido %}
+<section class="hero bg-kickboxing">
+    <div class="row">
+        <div class="medium-10 small-centered columns heading text-center">
+            <h1 class="animated fadeInUp">Kickboxing</h1>
+                
+        </div>
+    </div>
+</section>
+<section class="afterHero">
+<div class="row">
+    <article class="medium-8 medium-centered columns">
+        <h3 class="text-center"><a href="/programas/kickboxing">KICKBOXING</a></h3>
+        <p><strong>Kickboxing</strong> es un deporte de combate híbrido basado en el golpeo. Kickboxing combina las técnicas de golpeo del Box Occidental con las técnicas de pateo de <strong>Karate</strong> y <strong>Muay Thai</strong>. Los estudiantes son instruidos a golpear con sus puños, pies, rodillas, codos y espinillas. El Kickboxing se ha convertido en una parte esencial de la formación moderna del <a href="/mma"><strong>MMA</strong></a>. También se practica ampliamente para la defensa personal y es considerado  una excelente opción para la condición física en general.</p>
+    </article>
+</div>
+</section>
+<section class="afterHero">
+    <div class="row">
+        <div class="small-12 columns">
+            <h3><strong>IMÁGENES</strong></h3>
+            <ul class="clearing-thumbs small-block-grid-2 medium-block-grid-3  text-center" data-clearing>
+              <li><a href="{{STATIC_URL}}img/disciplinas/kickboxing/kickboxing_01.jpg">
+                <img class="th" data-caption="Kickboxing combina las técnicas de golpeo del Box Occidental" src="{{STATIC_URL}}img/disciplinas/kickboxing/th/kickboxing_01.jpg" alt="Kickboxing combina las técnicas de golpeo del Box Occidental">
+              </a></li>
+              <li><a href="{{STATIC_URL}}img/disciplinas/kickboxing/kickboxing_02.jpg">
+                <img class="th" data-caption="Ejercicios divertidos" src="{{STATIC_URL}}img/disciplinas/kickboxing/th/kickboxing_02.jpg" alt="Ejercicios divertidos">
+              </a></li>
+              <li><a href="{{STATIC_URL}}img/disciplinas/kickboxing/kickboxing_03.jpg">
+                <img class="th" data-caption="Los estudiantes son instruidos a golpear con sus puños, pies, rodillas, codos y espinillas." src="{{STATIC_URL}}img/disciplinas/kickboxing/th/kickboxing_03.jpg" alt=" Los estudiantes son instruidos a golpear con sus puños, pies, rodillas, codos y espinillas. ">
+              </a></li>
+              
+              <li><a href="{{STATIC_URL}}img/disciplinas/kickboxing/kickboxing_04.jpg">
+                <img class="th" data-caption="El Kickboxing se ha convertido en una parte esencial de la formación moderna del MMA" src="{{STATIC_URL}}img/disciplinas/kickboxing/th/kickboxing_04.jpg" alt="El Kickboxing se ha convertido en una parte esencial de la formación moderna del MMA">
+              </a></li>
+              <li><a href="{{STATIC_URL}}img/disciplinas/kickboxing/kickboxing_05.jpg">
+                <img class="th" data-caption="Es un buen deporte para acondicionamiento físico" src="{{STATIC_URL}}img/disciplinas/kickboxing/th/kickboxing_05.jpg" alt="Es un buen deporte para acondicionamiento físico">
+              </a></li>
+              <li><a href="{{STATIC_URL}}img/disciplinas/kickboxing/kickboxing_06.jpg">
+                <img class="th" data-caption="Excelente para la Defensa Personal" src="{{STATIC_URL}}img/disciplinas/kickboxing/th/kickboxing_06.jpg" alt="Excelente para la Defensa Personal">
+              </a></li>
+ 
+            </ul>
+        </div>
+    </div>
+    
+</section>
+    
+{% endblock contenido %}
