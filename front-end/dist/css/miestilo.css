@@ -154,12 +154,12 @@ border-radius: 50%;
     background-size: cover;
 }
 .bg-kickboxing{
-    background: url(/static/img/bgs/bg-kickboxing.jpg) 50% 0% no-repeat;
+    background: url(/static/img/bgs/bg-muaythai.jpg) 50% 0% no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
 }
 .bg-muaythai{
-    background: url(/static/img/bgs/bg-muaythai.jpg) 50% 0% no-repeat;
+    background: url(/static/img/bgs/bg-muaythai2.jpg) 50% 0% no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
 }
